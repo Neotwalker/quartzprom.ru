@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#E3E6EF">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#E3E6EF">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#E3E6EF">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<div class="page--wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="header--wrapper">
+						<div class="header--top">
+							<a href="index.html" class="logo"><img src="img/logo.svg" alt="#"></a>
+							<ul class="header--social social">
+								<li>
+									<a href="#">
+										<svg class="svg svg--address" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+											<path d="M12.398 19.804L12.8585 20.6917L12.8585 20.6917L12.398 19.804ZM11.602 19.804L11.1415 20.6917L11.1415 20.6917L11.602 19.804ZM18 11C18 13.1458 16.9079 14.9159 15.545 16.2906C14.183 17.6644 12.6342 18.555 11.9376 18.9163L12.8585 20.6917C13.6448 20.2838 15.397 19.2805 16.9653 17.6987C18.5326 16.1178 20 13.8706 20 11H18ZM12 5C15.3137 5 18 7.68629 18 11H20C20 6.58172 16.4183 3 12 3V5ZM6 11C6 7.68629 8.68629 5 12 5V3C7.58172 3 4 6.58172 4 11H6ZM12.0624 18.9163C11.3658 18.555 9.81702 17.6644 8.45503 16.2906C7.09211 14.9159 6 13.1458 6 11H4C4 13.8706 5.46741 16.1178 7.03474 17.6987C8.60299 19.2805 10.3552 20.2838 11.1415 20.6917L12.0624 18.9163ZM11.9376 18.9163C11.9514 18.9091 11.9733 18.9023 12 18.9023C12.0267 18.9023 12.0486 18.9091 12.0624 18.9163L11.1415 20.6917C11.6831 20.9726 12.3169 20.9726 12.8585 20.6917L11.9376 18.9163ZM14 11C14 12.1046 13.1046 13 12 13V15C14.2091 15 16 13.2091 16 11H14ZM12 9C13.1046 9 14 9.89543 14 11H16C16 8.79086 14.2091 7 12 7V9ZM10 11C10 9.89543 10.8954 9 12 9V7C9.79086 7 8 8.79086 8 11H10ZM12 13C10.8954 13 10 12.1046 10 11H8C8 13.2091 9.79086 15 12 15V13Z" fill="#7F819C"/>
+										</svg>
+										<span>
+											Россия, г. Москва,<br>
+											ул. Алабяна 10, корпус 6
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="tel:+74997030640">
+										<svg class="svg svg--phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+											<path d="M17.7071 13.7071L20.3552 16.3552C20.7113 16.7113 20.7113 17.2887 20.3552 17.6448C18.43 19.57 15.3821 19.7866 13.204 18.153L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L5.84701 10.796C4.21341 8.61788 4.43001 5.56999 6.35523 3.64477C6.71133 3.28867 7.28867 3.28867 7.64477 3.64477L10.2929 6.29289C10.6834 6.68342 10.6834 7.31658 10.2929 7.70711L9.27175 8.72825C9.10946 8.89054 9.06923 9.13846 9.17187 9.34373C10.3585 11.7171 12.2829 13.6415 14.6563 14.8281C14.8615 14.9308 15.1095 14.8905 15.2717 14.7283L16.2929 13.7071C16.6834 13.3166 17.3166 13.3166 17.7071 13.7071Z" stroke="#7F819C" stroke-width="2"/>
+										</svg>
+										<span>+7 (499) 703-06-40</span>
+									</a>
+								</li>
+								<li>
+									<a href="mailto:ru@Quartz-prom.ru">
+										<svg class="svg svg--mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+											<path d="M21 12C21 10.1195 20.411 8.28625 19.3156 6.7577C18.2203 5.22915 16.6736 4.08209 14.893 3.47763C13.1123 2.87316 11.187 2.84166 9.38744 3.38754C7.58792 3.93341 6.00459 5.02925 4.85982 6.52115C3.71505 8.01304 3.06635 9.82604 3.00482 11.7055C2.94329 13.585 3.47203 15.4366 4.51677 17.0001C5.56152 18.5637 7.06979 19.7608 8.82975 20.4232C10.5897 21.0856 12.513 21.18 14.3294 20.6933" stroke="#7F819C" stroke-width="2" stroke-linecap="round"/>
+											<circle cx="12" cy="12" r="4" stroke="#7F819C" stroke-width="2"/>
+											<path d="M16 9V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12" stroke="#7F819C" stroke-width="2" stroke-linecap="round"/>
+										</svg>
+										<span>ru@Quartz-prom.ru</span>
+									</a>
+								</li>
+							</ul>
+							<button class="button button--maingradient">
+								<span>Обратный звонок</span>
+							</button>
+						</div>
+						<div class="header--bottom">
+							<button class="button button--catalog">
+								<div class="burger">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+								<span>каталог</span>
+							</button>
+							<nav class="menu">
+								<ul class="list">
+									<li><a href="index.html">Главная</a></li>
+									<li class="menu-item-has-children">
+										<a href="#">Материалы</a>
+										<ul>
+											<li><a href="#">Стекла</a></li>
+											<li><a href="#">Кварцевые стержни</a></li>
+											<li><a href="#">Кварцевые трубки</a></li>
+											<li><a href="#">Оптические изделия</a></li>
+											<li><a href="#">Техническая керамика</a></li>
+										</ul>
+									</li>
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Доставка</a></li>
+									<li><a href="#">Оплата</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</nav>
+							<form role="search" method="get" id="searchform" class="search search-form" action="#">
+								<input class="search-field" type="search" name="s" value="" placeholder="Поиск...">
+								<input class="search-submit" type="submit" id="searchsubmit" value="">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="main--header section" style="background-image: url(img/main/close-up-hand-holding-lab-pipette.png);">
+				<div class="container">
+					<div class="row">
+						<div class="main--header__text">
+							<h1 class="h1">Разработка и поставка<br> лазерно-оптического<br> оборудования из кварца</h1>
+							<ul>
+								<li>Стойкость к высокой температуре - максимум +1200 градусов.</li>
+								<li>Высокие характеристики оптической и волновой прозрачности.</li>
+							</ul>
+							<a href="#" class="button button--white">Перейти в каталог</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main--production section">
+				<div class="container">
+					<div class="row">
+						<h2 class="h2">Наша продукция</h2>
+						<div class="main--production__wrapper">
+							<a href="#" class="main--production__item">
+								<h3 class="h3">Кварцевые<br> капилляры</h3>
+								<div class="main--production__image">
+									<img src="img/main/products/1.png" alt="#">
+								</div>
+								<svg class="main--production__logo" xmlns="http://www.w3.org/2000/svg" width="142" height="95" viewBox="0 0 142 95" fill="none">
+									<path d="M163.878 79.1344V74.8733C162.319 31.2891 125.607 0 81.5732 0C36.63 0 0 36.5796 0 81.461C0 126.342 36.63 162.922 81.5732 162.922C103.395 162.922 123.139 154.361 137.817 140.481L164 173L163.878 86.4391C164.008 84.8825 163.878 83.2556 163.878 81.5693C163.878 81.3099 163.878 79.5236 163.878 79.1344ZM81.5732 136.201C51.4379 136.201 26.888 111.685 26.888 81.5908C26.888 51.4969 51.4379 26.9807 81.5732 26.9807C111.709 26.9807 136.258 51.4969 136.258 81.5908C136.258 111.685 111.709 136.201 81.5732 136.201Z" fill="url(#paint0_linear_198_496)"/>
+									<defs>
+										<linearGradient id="paint0_linear_198_491" x1="5.86747e-06" y1="119.416" x2="73.0555" y2="179.49" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#0BB2FE"/>
+											<stop offset="1" stop-color="#1673FF"/>
+										</linearGradient>
+									</defs>
+								</svg>
+							</a>
+							<a href="#" class="main--production__item">
+								<h3 class="h3">Стекла</h3>
+								<div class="main--production__image">
+									<img src="img/main/products/2.png" alt="#">
+								</div>
+								<svg class="main--production__logo" xmlns="http://www.w3.org/2000/svg" width="142" height="95" viewBox="0 0 142 95" fill="none">
+									<path d="M163.878 79.1344V74.8733C162.319 31.2891 125.607 0 81.5732 0C36.63 0 0 36.5796 0 81.461C0 126.342 36.63 162.922 81.5732 162.922C103.395 162.922 123.139 154.361 137.817 140.481L164 173L163.878 86.4391C164.008 84.8825 163.878 83.2556 163.878 81.5693C163.878 81.3099 163.878 79.5236 163.878 79.1344ZM81.5732 136.201C51.4379 136.201 26.888 111.685 26.888 81.5908C26.888 51.4969 51.4379 26.9807 81.5732 26.9807C111.709 26.9807 136.258 51.4969 136.258 81.5908C136.258 111.685 111.709 136.201 81.5732 136.201Z" fill="url(#paint0_linear_198_496)"/>
+									<defs>
+										<linearGradient id="paint0_linear_198_492" x1="5.86747e-06" y1="119.416" x2="73.0555" y2="179.49" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#0BB2FE"/>
+											<stop offset="1" stop-color="#1673FF"/>
+										</linearGradient>
+									</defs>
+								</svg>
+							</a>
+							<a href="#" class="main--production__item">
+								<h3 class="h3">Линзы</h3>
+								<div class="main--production__image">
+									<img src="img/main/products/3.png" alt="#">
+								</div>
+								<svg class="main--production__logo" xmlns="http://www.w3.org/2000/svg" width="142" height="95" viewBox="0 0 142 95" fill="none">
+									<path d="M163.878 79.1344V74.8733C162.319 31.2891 125.607 0 81.5732 0C36.63 0 0 36.5796 0 81.461C0 126.342 36.63 162.922 81.5732 162.922C103.395 162.922 123.139 154.361 137.817 140.481L164 173L163.878 86.4391C164.008 84.8825 163.878 83.2556 163.878 81.5693C163.878 81.3099 163.878 79.5236 163.878 79.1344ZM81.5732 136.201C51.4379 136.201 26.888 111.685 26.888 81.5908C26.888 51.4969 51.4379 26.9807 81.5732 26.9807C111.709 26.9807 136.258 51.4969 136.258 81.5908C136.258 111.685 111.709 136.201 81.5732 136.201Z" fill="url(#paint0_linear_198_496)"/>
+									<defs>
+										<linearGradient id="paint0_linear_198_493" x1="5.86747e-06" y1="119.416" x2="73.0555" y2="179.49" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#0BB2FE"/>
+											<stop offset="1" stop-color="#1673FF"/>
+										</linearGradient>
+									</defs>
+								</svg>
+							</a>
+							<a href="#" class="main--production__item">
+								<h3 class="h3">Кварцевая<br> посуда</h3>
+								<div class="main--production__image">
+									<img src="img/main/products/4.png" alt="#">
+								</div>
+								<svg class="main--production__logo" xmlns="http://www.w3.org/2000/svg" width="142" height="95" viewBox="0 0 142 95" fill="none">
+									<path d="M163.878 79.1344V74.8733C162.319 31.2891 125.607 0 81.5732 0C36.63 0 0 36.5796 0 81.461C0 126.342 36.63 162.922 81.5732 162.922C103.395 162.922 123.139 154.361 137.817 140.481L164 173L163.878 86.4391C164.008 84.8825 163.878 83.2556 163.878 81.5693C163.878 81.3099 163.878 79.5236 163.878 79.1344ZM81.5732 136.201C51.4379 136.201 26.888 111.685 26.888 81.5908C26.888 51.4969 51.4379 26.9807 81.5732 26.9807C111.709 26.9807 136.258 51.4969 136.258 81.5908C136.258 111.685 111.709 136.201 81.5732 136.201Z" fill="url(#paint0_linear_198_496)"/>
+									<defs>
+										<linearGradient id="paint0_linear_198_494" x1="5.86747e-06" y1="119.416" x2="73.0555" y2="179.49" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#0BB2FE"/>
+											<stop offset="1" stop-color="#1673FF"/>
+										</linearGradient>
+									</defs>
+								</svg>
+							</a>
+							<a href="#" class="main--production__item">
+								<h3 class="h3">Кварцевые<br> стержни</h3>
+								<div class="main--production__image">
+									<img src="img/main/products/5.png" alt="#">
+								</div>
+								<svg class="main--production__logo" xmlns="http://www.w3.org/2000/svg" width="142" height="95" viewBox="0 0 142 95" fill="none">
+									<path d="M163.878 79.1344V74.8733C162.319 31.2891 125.607 0 81.5732 0C36.63 0 0 36.5796 0 81.461C0 126.342 36.63 162.922 81.5732 162.922C103.395 162.922 123.139 154.361 137.817 140.481L164 173L163.878 86.4391C164.008 84.8825 163.878 83.2556 163.878 81.5693C163.878 81.3099 163.878 79.5236 163.878 79.1344ZM81.5732 136.201C51.4379 136.201 26.888 111.685 26.888 81.5908C26.888 51.4969 51.4379 26.9807 81.5732 26.9807C111.709 26.9807 136.258 51.4969 136.258 81.5908C136.258 111.685 111.709 136.201 81.5732 136.201Z" fill="url(#paint0_linear_198_496)"/>
+									<defs>
+										<linearGradient id="paint0_linear_198_495" x1="5.86747e-06" y1="119.416" x2="73.0555" y2="179.49" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#0BB2FE"/>
+											<stop offset="1" stop-color="#1673FF"/>
+										</linearGradient>
+									</defs>
+								</svg>
+							</a>
+							<a href="#" class="main--production__item">
+								<h3 class="h3">Оптические<br> изделия</h3>
+								<div class="main--production__image">
+									<img src="img/main/products/6.png" alt="#">
+								</div>
+								<svg class="main--production__logo" xmlns="http://www.w3.org/2000/svg" width="142" height="95" viewBox="0 0 142 95" fill="none">
+									<path d="M163.878 79.1344V74.8733C162.319 31.2891 125.607 0 81.5732 0C36.63 0 0 36.5796 0 81.461C0 126.342 36.63 162.922 81.5732 162.922C103.395 162.922 123.139 154.361 137.817 140.481L164 173L163.878 86.4391C164.008 84.8825 163.878 83.2556 163.878 81.5693C163.878 81.3099 163.878 79.5236 163.878 79.1344ZM81.5732 136.201C51.4379 136.201 26.888 111.685 26.888 81.5908C26.888 51.4969 51.4379 26.9807 81.5732 26.9807C111.709 26.9807 136.258 51.4969 136.258 81.5908C136.258 111.685 111.709 136.201 81.5732 136.201Z" fill="url(#paint0_linear_198_496)"/>
+									<defs>
+										<linearGradient id="paint0_linear_198_496" x1="5.86747e-06" y1="119.416" x2="73.0555" y2="179.49" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#0BB2FE"/>
+											<stop offset="1" stop-color="#1673FF"/>
+										</linearGradient>
+									</defs>
+								</svg>
+							</a>
+							<a href="#" class="main--production__item">
+								<h3 class="h3">Оптические<br> изделия</h3>
+								<div class="main--production__image">
+									<img src="img/main/products/7.png" alt="#">
+								</div>
+								<svg class="main--production__logo" xmlns="http://www.w3.org/2000/svg" width="142" height="95" viewBox="0 0 142 95" fill="none">
+									<path d="M163.878 79.1344V74.8733C162.319 31.2891 125.607 0 81.5732 0C36.63 0 0 36.5796 0 81.461C0 126.342 36.63 162.922 81.5732 162.922C103.395 162.922 123.139 154.361 137.817 140.481L164 173L163.878 86.4391C164.008 84.8825 163.878 83.2556 163.878 81.5693C163.878 81.3099 163.878 79.5236 163.878 79.1344ZM81.5732 136.201C51.4379 136.201 26.888 111.685 26.888 81.5908C26.888 51.4969 51.4379 26.9807 81.5732 26.9807C111.709 26.9807 136.258 51.4969 136.258 81.5908C136.258 111.685 111.709 136.201 81.5732 136.201Z" fill="url(#paint0_linear_198_496)"/>
+									<defs>
+										<linearGradient id="paint0_linear_198_497" x1="5.86747e-06" y1="119.416" x2="73.0555" y2="179.49" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#0BB2FE"/>
+											<stop offset="1" stop-color="#1673FF"/>
+										</linearGradient>
+									</defs>
+								</svg>
+							</a>
+							<a href="#" class="main--production__item">
+								<h3 class="h3">Техническая<br> керамика</h3>
+								<div class="main--production__image">
+									<img src="img/main/products/8.png" alt="#">
+								</div>
+								<svg class="main--production__logo" xmlns="http://www.w3.org/2000/svg" width="142" height="95" viewBox="0 0 142 95" fill="none">
+									<path d="M163.878 79.1344V74.8733C162.319 31.2891 125.607 0 81.5732 0C36.63 0 0 36.5796 0 81.461C0 126.342 36.63 162.922 81.5732 162.922C103.395 162.922 123.139 154.361 137.817 140.481L164 173L163.878 86.4391C164.008 84.8825 163.878 83.2556 163.878 81.5693C163.878 81.3099 163.878 79.5236 163.878 79.1344ZM81.5732 136.201C51.4379 136.201 26.888 111.685 26.888 81.5908C26.888 51.4969 51.4379 26.9807 81.5732 26.9807C111.709 26.9807 136.258 51.4969 136.258 81.5908C136.258 111.685 111.709 136.201 81.5732 136.201Z" fill="url(#paint0_linear_198_496)"/>
+									<defs>
+										<linearGradient id="paint0_linear_198_498" x1="5.86747e-06" y1="119.416" x2="73.0555" y2="179.49" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#0BB2FE"/>
+											<stop offset="1" stop-color="#1673FF"/>
+										</linearGradient>
+									</defs>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main--advantages section">
+				<div class="container">
+					<div class="row">
+						<h2 class="h2">Наши преимущества</h2>
+						<div class="main--advantages__text text-gray text-16 text-golos">
+							<p>
+								Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного
+								текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При
+								создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным
+								образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для
+								визуально-слухового восприятия.
+							</p>
+							<p>
+								По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей
+								недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой
+								макет непонятным смыслом и придаст неповторимый колорит советских времен.
+							</p>
+						</div>
+						<div class="main--advantages__list">
+							<div class="main--advantages__item">
+								<div class="main--advantages__icon">
+									<img src="img/main/adv.png" alt="#">
+								</div>
+								<div class="h3">Широкий<br> ассортимент элементов</div>
+								<div class="text-14 text-gray text-golos">
+									В каталоге можно ознакомиться подробными характеристиками товаров, а также подобрать необходимые вам Комплектующие
+								</div>
+							</div>
+							<div class="main--advantages__item">
+								<div class="main--advantages__icon">
+									<img src="img/main/adv.png" alt="#">
+								</div>
+								<div class="h3">Высочайшее качество<br> по приемлемым ценам</div>
+								<div class="text-14 text-gray text-golos">
+									Лучшее качество по низшим ценам, непременно станет во главе индустрии и мы неуклонно следуем этому принципу
+								</div>
+							</div>
+							<div class="main--advantages__item">
+								<div class="main--advantages__icon">
+									<img src="img/main/adv.png" alt="#">
+								</div>
+								<div class="h3">Принцип открытости<br> в работе с клиентами</div>
+								<div class="text-14 text-gray text-golos">
+									Делаем продажи доступными и понятными.
+									Мы обеспечиваем высокий уровень качества услуг всем клиентам нашей компании
+								</div>
+							</div>
+							<div class="main--advantages__item">
+								<div class="main--advantages__icon">
+									<img src="img/main/adv.png" alt="#">
+								</div>
+								<div class="h3">Контроль качества на<br> заводах-изготовителях</div>
+								<div class="text-14 text-gray text-golos">
+									Контролю качества подлежит каждая партия продукции перед отправкой ее потребителю или на склад
+								</div>
+							</div>
+							<div class="main--advantages__item">
+								<div class="main--advantages__icon">
+									<img src="img/main/adv.png" alt="#">
+								</div>
+								<div class="h3">Сотрудничество с ведущими<br> предприятиями и институтами</div>
+								<div class="text-14 text-gray text-golos">
+									Налаживаем отношения с университетами, находим контакты со студентами и рестораторами, устанавливаем взаимоотношения с современными предприятиями
+								</div>
+							</div>
+							<div class="main--advantages__item">
+								<div class="main--advantages__icon">
+									<img src="img/main/adv.png" alt="#">
+								</div>
+								<div class="h3">Свой штат мультиязычных<br> сотрудников в России и в Китае</div>
+								<div class="text-14 text-gray text-golos">
+									Мы делаем все, чтобы сотрудничество с нами было максимально прозрачным и приносила больше прибыли с течением времени;
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="banner banner--individual">
+				<div class="container">
+					<div class="row">
+						<div class="banner--wrapper">
+							<div class="banner--left">
+								<h2 class="h2">
+									Выполняем индивидуальные заказы по<br> изготовлению кварцевых изделий для<br> производственных компаний и лабораторий
+								</h2>
+								<button class="button button--white">Оставить заявку</button>
+							</div>
+							<div class="banner--right">
+								<img src="img/main/banner-star.png" alt="#">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="main--management section">
+				<div class="container">
+					<div class="row">
+						<div class="main--management__wrapper">
+							<div class="main--management__left">
+								<h2 class="h2">Направления работы</h2>
+								<div class="main--management__list">
+									<div class="main--management__item">
+										<div class="icon">
+											<img src="img/main/management/flask-line.svg">
+										</div>
+										<span>Исследования</span>
+									</div>
+									<div class="main--management__item">
+										<div class="icon">
+											<img src="img/main/management/Vector.svg">
+										</div>
+										<span>Проектирование</span>
+									</div>
+									<div class="main--management__item">
+										<div class="icon">
+											<img src="img/main/management/test-tube-line.svg">
+										</div>
+										<span>Экспертиза</span>
+									</div>
+									<div class="main--management__item">
+										<div class="icon">
+											<img src="img/main/management/truck-line.svg">
+										</div>
+										<span>Поставка</span>
+									</div>
+								</div>
+								<div class="main--management__text text-16 text-gray text-golos">
+									<p>
+										Широкий ассортимент продукции позволяет подбирать компоненты практически для любой области применения
+										(технологические лазеры, тепловизионные приборы, информационные системы, медицина и проч.).
+									</p>
+									<p>
+										В настоящее время Кварцпром являются одним из ведущих дистрибьюторов на рынке комплектующих к оптоэлектронному,
+										лазерному и тепловизионному оборудованию в России.
+									</p>
+								</div>
+							</div>
+							<div class="main--management__right">
+								<img src="img/main/management/nationalLab-1 1.png" alt="#">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main--about">
+				<div class="container">
+					<div class="row">
+						<h2 class="h1">Коротко о нас</h2>
+						<div class="main--about__text text-white text-golos text-20">
+							<p>
+								Мы производим изделия из кварцевого стекла и керамики, трубку кварцевую, трубку стеклянную различных диаметров и
+								конфигураций, карбидкремниевые электронагреватели, водоуказательные приборы, указатели уровня жидкости,запорные
+								устройства, стекло Клингера и стекло Дюранса с 2004 года.
+							</p>
+							<p>
+								Мы являемся лидерами на рынке кварцевого стекла, так как благодаря нашему 9 летнему опыту, мы довели качество изделий
+								из кварцевого стекла и керамики почти до идеального.
+							</p>
+							<p>
+								Активное участие нашей компании в работе Ассоциации «Инновационные предприятия Российской федерации» по изучению,
+								разработке и производству материалов полупроводниковой, оптической, волоконно-оптической промышленности, в
+								производстве тиглей, специальных нитей и ткани, помогают нам профессионально оценивать возможности современного
+								развития промышленного комплекса, находить и предлагать новые разработки, квалифицированно подбирать продукцию для
+								различных областей промышленности, энергетики.
+							</p>
+							<p>
+								Долгосрочные деловые отношения с заводами-изготовителями и высокая квалификация ИТР и менеджерского состава дают нам
+								возможность производить и поставлять продукцию высокого качества по низким ценам и в кратчайшие сроки. Наша компания
+								всегда идет навстречу пожеланиям клиента, находит к нему индивидуальный подход, что непременно приводит к успешному
+								результату сотрудничества.
+							</p>
+							<p>
+								Мы будем рады оказать профессиональную консультацию в подборе нужных Вам материалов.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main--faq">
+				<div class="container">
+					<div class="row">
+						<h2 class="h2">Вопросы и ответы</h2>
+						<div class="main--faq__list">
+							<div class="main--faq__item">
+								<div class="main--faq__item--button text-golos text-18">
+									<span>Как оставить заявку на заказ?</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.6 12L8 10.6L3.4 6L8 1.4L6.6 1.22392e-07L0.599999 6L6.6 12Z" fill="#7F819C"/>
+									</svg>
+								</div>
+								<div class="main--faq__item--answer text-gray text-golos">
+									Свяжитесь с нами любым удобным для вас способом: позвоните по телефону, через специальную форму на сайте, с помощью
+									одного из мессенджеров или посредством электронной почты. На основании согласованного проекта мы произведем расчет
+									стоимости изготовления изделия, определим сроки и этапность изготовления заказа. Для несерийных изделий расчет стоимости
+									занимает не менее 5 рабочих дней.
+								</div>
+							</div>
+							<div class="main--faq__item">
+								<div class="main--faq__item--button text-golos text-18">
+									<span>Как изготавливают кварцевое стекло?</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.6 12L8 10.6L3.4 6L8 1.4L6.6 1.22392e-07L0.599999 6L6.6 12Z" fill="#7F819C"/>
+									</svg>
+								</div>
+								<div class="main--faq__item--answer text-gray text-golos">
+									Свяжитесь с нами любым удобным для вас способом: позвоните по телефону, через специальную форму на сайте, с помощью
+									одного из мессенджеров или посредством электронной почты. На основании согласованного проекта мы произведем расчет
+									стоимости изготовления изделия, определим сроки и этапность изготовления заказа. Для несерийных изделий расчет стоимости
+									занимает не менее 5 рабочих дней.
+								</div>
+							</div>
+							<div class="main--faq__item">
+								<div class="main--faq__item--button text-golos text-18">
+									<span>В каких отраслях применяется кварц? </span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.6 12L8 10.6L3.4 6L8 1.4L6.6 1.22392e-07L0.599999 6L6.6 12Z" fill="#7F819C"/>
+									</svg>
+								</div>
+								<div class="main--faq__item--answer text-gray text-golos">
+									Свяжитесь с нами любым удобным для вас способом: позвоните по телефону, через специальную форму на сайте, с помощью
+									одного из мессенджеров или посредством электронной почты. На основании согласованного проекта мы произведем расчет
+									стоимости изготовления изделия, определим сроки и этапность изготовления заказа. Для несерийных изделий расчет стоимости
+									занимает не менее 5 рабочих дней.
+								</div>
+							</div>
+							<div class="main--faq__item">
+								<div class="main--faq__item--button text-golos text-18">
+									<span>Как производится отгрузка товара?</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.6 12L8 10.6L3.4 6L8 1.4L6.6 1.22392e-07L0.599999 6L6.6 12Z" fill="#7F819C"/>
+									</svg>
+								</div>
+								<div class="main--faq__item--answer text-gray text-golos">
+									Свяжитесь с нами любым удобным для вас способом: позвоните по телефону, через специальную форму на сайте, с помощью
+									одного из мессенджеров или посредством электронной почты. На основании согласованного проекта мы произведем расчет
+									стоимости изготовления изделия, определим сроки и этапность изготовления заказа. Для несерийных изделий расчет стоимости
+									занимает не менее 5 рабочих дней.
+								</div>
+							</div>
+							<div class="main--faq__item">
+								<div class="main--faq__item--button text-golos text-18">
+									<span>Какие гарантии есть на товар?</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.6 12L8 10.6L3.4 6L8 1.4L6.6 1.22392e-07L0.599999 6L6.6 12Z" fill="#7F819C"/>
+									</svg>
+								</div>
+								<div class="main--faq__item--answer text-gray text-golos">
+									Свяжитесь с нами любым удобным для вас способом: позвоните по телефону, через специальную форму на сайте, с помощью
+									одного из мессенджеров или посредством электронной почты. На основании согласованного проекта мы произведем расчет
+									стоимости изготовления изделия, определим сроки и этапность изготовления заказа. Для несерийных изделий расчет стоимости
+									занимает не менее 5 рабочих дней.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main--contact" style="background-image: url(img/form-logo.svg);">
+				<div class="container">
+					<div class="row">
+						<div class="main--contact__wrapper">
+							<div class="main--contact__left">
+								<h2 class="h2"><b>Есть вопросы?</b> Свяжитесь с нами!</h2>
+								<div class="main--contact__text text-gray">
+									Производство посуды для лабораторных исследований из кварца, кордиеритовой керамики,  технического фарфора и корунда   
+								</div>
+								<div class="main--contact__list">
+									<ul class="main--contact__social social">
+										<li>
+											<a href="mailto:ru@Quartz-prom.ru" class="mail">
+												<svg class="svg svg--mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+													<path d="M21 12C21 10.1195 20.411 8.28625 19.3156 6.7577C18.2203 5.22915 16.6736 4.08209 14.893 3.47763C13.1123 2.87316 11.187 2.84166 9.38744 3.38754C7.58792 3.93341 6.00459 5.02925 4.85982 6.52115C3.71505 8.01304 3.06635 9.82604 3.00482 11.7055C2.94329 13.585 3.47203 15.4366 4.51677 17.0001C5.56152 18.5637 7.06979 19.7608 8.82975 20.4232C10.5897 21.0856 12.513 21.18 14.3294 20.6933" stroke="#7F819C" stroke-width="2" stroke-linecap="round"/>
+													<circle cx="12" cy="12" r="4" stroke="#7F819C" stroke-width="2"/>
+													<path d="M16 9V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12" stroke="#7F819C" stroke-width="2" stroke-linecap="round"/>
+												</svg>
+												<div class="mail-text">
+													<b>ru@Quartz-prom.ru</b>
+													<span class="text-gray">Мы на связи!</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<div class="time">
+												<svg class="svg svg-time" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<circle cx="12" cy="12" r="9" stroke="#141851" stroke-width="2"/>
+													<path d="M16.5 12H12.25C12.1119 12 12 11.8881 12 11.75V8.5" stroke="#141851" stroke-width="2" stroke-linecap="round"/>
+												</svg>
+												<div class="time-text">
+													<b>24/7 365 дней</b>
+													<span class="text-gray">Без выходных!</span>
+												</div>
+											</div>
+										</li>
+										<li class="main--contact__links">
+											<b>Мы в социальных сетях</b>
+											<ul>
+												<li>
+													<a href="#" class="telegram">
+														<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<rect width="48" height="48" fill="#1675FF"/>
+															<path fill-rule="evenodd" clip-rule="evenodd" d="M21.7372 26.8922L21.4105 31.8272C21.8889 31.8272 22.1105 31.6056 22.3789 31.3372L24.7006 29.0856L29.5305 32.6556C30.4172 33.1456 31.0589 32.8889 31.2805 31.8272L34.4539 16.8822C34.7805 15.5756 33.9639 14.9806 33.1122 15.3656L14.4805 22.5522C13.2089 23.0656 13.2205 23.7772 14.2472 24.0689L19.0305 25.5856L30.0905 18.5972C30.19 18.5376 30.2877 18.4955 30.3781 18.4689L30.3811 18.4681C30.5039 18.4324 30.613 18.4254 30.6944 18.4418C30.8687 18.4769 30.9158 18.6196 30.6972 18.8189L21.7372 26.8922ZM31.599 20.6985L24.893 26.7408L29.5803 30.2053L31.599 20.6985ZM29.3014 31.5002C29.3014 31.5002 29.3028 31.4948 29.3064 31.4857C29.3034 31.4959 29.3014 31.5002 29.3014 31.5002ZM32.5302 16.3139L32.5299 16.3164L32.5302 16.3139Z" fill="white"/>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="whatsapp">
+														<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<rect width="48" height="48" fill="#1675FF"/>
+															<g clip-path="url(#clip0_198_419)">
+															<path d="M19.253 30.494L19.977 30.917C21.198 31.6291 22.5866 32.0029 24 32C25.5823 32 27.129 31.5308 28.4446 30.6518C29.7602 29.7727 30.7855 28.5233 31.3911 27.0615C31.9966 25.5997 32.155 23.9911 31.8463 22.4393C31.5376 20.8874 30.7757 19.462 29.6569 18.3431C28.538 17.2243 27.1126 16.4624 25.5607 16.1537C24.0089 15.845 22.4004 16.0035 20.9385 16.609C19.4767 17.2145 18.2273 18.2398 17.3483 19.5554C16.4692 20.871 16 22.4177 16 24C16 25.436 16.377 26.813 17.084 28.024L17.506 28.748L16.853 31.149L19.253 30.494ZM14.004 34L15.356 29.032C14.4652 27.5049 13.9971 25.768 14 24C14 18.477 18.477 14 24 14C29.523 14 34 18.477 34 24C34 29.523 29.523 34 24 34C22.2328 34.0029 20.4967 33.5352 18.97 32.645L14.004 34ZM20.391 19.308C20.525 19.298 20.66 19.298 20.794 19.304C20.848 19.308 20.902 19.314 20.956 19.32C21.115 19.338 21.29 19.435 21.349 19.569C21.647 20.245 21.937 20.926 22.217 21.609C22.279 21.761 22.242 21.956 22.124 22.146C22.0429 22.2745 21.9551 22.3986 21.861 22.518C21.748 22.663 21.505 22.929 21.505 22.929C21.505 22.929 21.406 23.047 21.444 23.194C21.458 23.25 21.504 23.331 21.546 23.399L21.605 23.494C21.861 23.921 22.205 24.354 22.625 24.762C22.745 24.878 22.862 24.997 22.988 25.108C23.456 25.521 23.986 25.858 24.558 26.108L24.563 26.11C24.648 26.147 24.691 26.167 24.815 26.22C24.877 26.246 24.941 26.269 25.006 26.286C25.0732 26.3031 25.1439 26.2999 25.2093 26.2767C25.2746 26.2536 25.3316 26.2116 25.373 26.156C26.097 25.279 26.163 25.222 26.169 25.222V25.224C26.2193 25.1771 26.2791 25.1415 26.3443 25.1196C26.4095 25.0977 26.4786 25.09 26.547 25.097C26.607 25.101 26.668 25.112 26.724 25.137C27.255 25.38 28.124 25.759 28.124 25.759L28.706 26.02C28.804 26.067 28.893 26.178 28.896 26.285C28.9 26.352 28.906 26.46 28.883 26.658C28.851 26.917 28.773 27.228 28.695 27.391C28.6416 27.5022 28.5707 27.6042 28.485 27.693C28.3841 27.7989 28.2736 27.8954 28.155 27.981C28.114 28.0119 28.0723 28.0419 28.03 28.071C27.9056 28.1499 27.7778 28.2233 27.647 28.291C27.3895 28.4278 27.1052 28.5063 26.814 28.521C26.629 28.531 26.444 28.545 26.258 28.535C26.25 28.535 25.69 28.448 25.69 28.448C24.2683 28.074 22.9534 27.3735 21.85 26.402C21.624 26.203 21.415 25.989 21.201 25.776C20.311 24.891 19.639 23.936 19.231 23.034C19.0222 22.5913 18.9094 22.1094 18.9 21.62C18.8959 21.0129 19.0944 20.4217 19.464 19.94C19.537 19.846 19.606 19.748 19.725 19.635C19.852 19.515 19.932 19.451 20.019 19.407C20.1347 19.349 20.2609 19.315 20.39 19.307L20.391 19.308Z" fill="white"/>
+															</g>
+															<defs>
+															<clipPath id="clip0_198_419">
+															<rect width="24" height="24" fill="white" transform="translate(12 12)"/>
+															</clipPath>
+															</defs>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="vk">
+														<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<rect width="48" height="48" fill="#1675FF"/>
+															<path d="M25.4336 30C18.2587 30 14.1678 25.5036 14 18.0096H17.6084C17.7238 23.5052 20.3671 25.8303 22.465 26.3106V18.0096H25.8531V22.7462C27.9196 22.5444 30.1014 20.3827 30.8357 18H34.2133C33.9379 19.2334 33.3877 20.4015 32.5972 21.4314C31.8067 22.4613 30.7928 23.3308 29.6189 23.9856C30.929 24.5828 32.0859 25.4277 33.0135 26.4644C33.941 27.5011 34.6181 28.7061 35 30H31.2762C30.479 27.723 28.486 25.9552 25.8531 25.715V30H25.4441H25.4336Z" fill="white"/>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+									<div class="main--contact__address">
+										<div class="address">
+											<svg class="svg svg--address" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+												<path d="M12.398 19.804L12.8585 20.6917L12.8585 20.6917L12.398 19.804ZM11.602 19.804L11.1415 20.6917L11.1415 20.6917L11.602 19.804ZM18 11C18 13.1458 16.9079 14.9159 15.545 16.2906C14.183 17.6644 12.6342 18.555 11.9376 18.9163L12.8585 20.6917C13.6448 20.2838 15.397 19.2805 16.9653 17.6987C18.5326 16.1178 20 13.8706 20 11H18ZM12 5C15.3137 5 18 7.68629 18 11H20C20 6.58172 16.4183 3 12 3V5ZM6 11C6 7.68629 8.68629 5 12 5V3C7.58172 3 4 6.58172 4 11H6ZM12.0624 18.9163C11.3658 18.555 9.81702 17.6644 8.45503 16.2906C7.09211 14.9159 6 13.1458 6 11H4C4 13.8706 5.46741 16.1178 7.03474 17.6987C8.60299 19.2805 10.3552 20.2838 11.1415 20.6917L12.0624 18.9163ZM11.9376 18.9163C11.9514 18.9091 11.9733 18.9023 12 18.9023C12.0267 18.9023 12.0486 18.9091 12.0624 18.9163L11.1415 20.6917C11.6831 20.9726 12.3169 20.9726 12.8585 20.6917L11.9376 18.9163ZM14 11C14 12.1046 13.1046 13 12 13V15C14.2091 15 16 13.2091 16 11H14ZM12 9C13.1046 9 14 9.89543 14 11H16C16 8.79086 14.2091 7 12 7V9ZM10 11C10 9.89543 10.8954 9 12 9V7C9.79086 7 8 8.79086 8 11H10ZM12 13C10.8954 13 10 12.1046 10 11H8C8 13.2091 9.79086 15 12 15V13Z" fill="#7F819C"/>
+											</svg>
+											<div class="address--wrapper">
+												<div class="address-1">
+													<div class="address-text">
+														<span>
+															<b>Москва,</b><br>
+															Балаклавский проспект 24к1
+														</span>
+														<span class="address-type text-gray">Главный офис</span>
+													</div>
+												</div>
+												<div class="address-2">
+													<div class="address-text">
+														<span>
+															<b>Москва,</b><br>
+															ул. Алабяна 10, корпус 6
+														</span>
+														<span class="address-type text-gray">Производство</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="phones">
+											<svg class="svg svg-phone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<path d="M17.7071 13.7071L20.3552 16.3552C20.7113 16.7113 20.7113 17.2887 20.3552 17.6448C18.43 19.57 15.3821 19.7866 13.204 18.153L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L5.84701 10.796C4.21341 8.61788 4.43001 5.56999 6.35523 3.64477C6.71133 3.28867 7.28867 3.28867 7.64477 3.64477L10.2929 6.29289C10.6834 6.68342 10.6834 7.31658 10.2929 7.70711L9.27175 8.72825C9.10946 8.89054 9.06923 9.13846 9.17187 9.34373C10.3585 11.7171 12.2829 13.6415 14.6563 14.8281C14.8615 14.9308 15.1095 14.8905 15.2717 14.7283L16.2929 13.7071C16.6834 13.3166 17.3166 13.3166 17.7071 13.7071Z" stroke="#141851" stroke-width="2"/>
+											</svg>
+											<div class="phones-wrapper">
+												<a href="tel:+74997030640">+7 (499) 703-06-40</a>
+												<a href="tel:+79253808104">+7 (925) 380-81-04</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main--contact__right">
+								<form action="/#wpcf7-f479-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+									<div style="display: none;">
+										<input type="hidden" name="_wpcf7" value="479">
+										<input type="hidden" name="_wpcf7_version" value="6.0">
+										<input type="hidden" name="_wpcf7_locale" value="en_US">
+										<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f479-o1">
+										<input type="hidden" name="_wpcf7_container_post" value="0">
+										<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+										<input type="hidden" name="_wpcf7_key" value="footer-form-en">
+										<input type="hidden" name="_cf7sg_toggles" value="">
+										<input type="hidden" name="_cf7sg_version" value="4.15.7">
+										<input type="hidden" name="_wpnonce" value="fc7cc9148a">
+										<input type="hidden" name="_wpcf7_lang" value="en">
+									</div>
+									<div class="main--form__block first">
+										<label>Ваше имя</label>
+										<span class="wpcf7-form-control-wrap" data-name="fio"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Иван" value="" type="text" name="fio"></span>
+									</div>
+									<div class="main--form__wrapper">
+										<div class="main--form__block">
+											<label>Почта</label>
+											<span class="wpcf7-form-control-wrap" data-name="email2"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="example@mail.ru" value="" type="email" name="email2"></span>
+										</div>
+										<div class="main--form__block">
+											<label>Телефон</label>
+											<span class="wpcf7-form-control-wrap" data-name="tel2"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel" aria-invalid="false" placeholder="+7 (999) 999 99 99" value="" type="tel" name="tel2"></span>
+										</div>
+									</div>
+									<div class="main--form__block">
+										<label>Ваше сообщение</label>
+										<span class="wpcf7-form-control-wrap" data-name="textarea2"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Введите сообщение" name="textarea2"></textarea></span>
+									</div>
+									<div class="main--form__footer">
+										<div class="main--form__button">
+											<button class="button button--maingradient wpcf7-form-control wpcf7-submit" type="submit" disabled="disabled">
+												<span>Связаться с нами</span>
+											</button>
+										</div>
+										<div class="main--form__block file">
+											<label for="file-1" class="input__file-button">
+												<span class="input__file-button-text">Прикрепить  файл</span>
+											</label>
+											<span class="wpcf7-form-control-wrap" data-name="file-1"><input size="40" class="wpcf7-form-control wpcf7-file" id="file-1" accept=".pdf,.txt,.png,.jpg,.docx,.doc,.ppt,.jpeg,.pptx" aria-invalid="false" type="file" name="file-1"></span>
+										</div>
+									</div>
+									</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer--top">
+						<div class="footer--info">
+							<div class="logo"><img src="img/logo-white.svg" alt="#"></div>
+							<div class="footer--info__company">
+								<div>
+									ООО «КварцПром»
+									<br><br>
+									ОГРН 1193123002951 <br>
+									ИНН 3123449024
+								</div>
+								<span>г. Москва, ул. Алабяна 10, корпус 6</span>
+							</div>
+							<div class="footer--info__developers">
+								<span>Разработка сайта</span>
+								<img src="img/develop.svg" alt="#">
+							</div>
+						</div>
+						<nav class="footer--block footer--nav">
+							<span>Навигация</span>
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Каталог</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Оплата</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Карта сайта</a></li>
+							</ul>
+						</nav>
+						<nav class="footer--block footer--nav">
+							<span>Каталог</span>
+							<ul>
+								<li><a href="#">Кварцевые капилляры</a></li>
+								<li><a href="#">Кварцевые стержни</a></li>
+								<li><a href="#">Кварцевые трубки</a></li>
+								<li><a href="#">Кварцевая посуда</a></li>
+								<li><a href="#">Техническая керамика</a></li>
+								<li><a href="#">Линзы</a></li>
+								<li><a href="#">Стекла</a></li>
+								<li><a href="#">Оптические изделия</a></li>
+							</ul>
+						</nav>
+						<div class="footer--block footer--contacts">
+							<span>Контакты</span>
+							<ul class="social">
+								<li>
+									<a href="tel:+74997030640">
+										<svg class="svg svg--phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+											<path d="M17.7071 13.7071L20.3552 16.3552C20.7113 16.7113 20.7113 17.2887 20.3552 17.6448C18.43 19.57 15.3821 19.7866 13.204 18.153L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L5.84701 10.796C4.21341 8.61788 4.43001 5.56999 6.35523 3.64477C6.71133 3.28867 7.28867 3.28867 7.64477 3.64477L10.2929 6.29289C10.6834 6.68342 10.6834 7.31658 10.2929 7.70711L9.27175 8.72825C9.10946 8.89054 9.06923 9.13846 9.17187 9.34373C10.3585 11.7171 12.2829 13.6415 14.6563 14.8281C14.8615 14.9308 15.1095 14.8905 15.2717 14.7283L16.2929 13.7071C16.6834 13.3166 17.3166 13.3166 17.7071 13.7071Z" stroke="#7F819C" stroke-width="2"/>
+										</svg>
+										<span>+7 (499) 703-06-40</span>
+									</a>
+								</li>
+								<li>
+									<a href="mailto:ru@Quartz-prom.ru">
+										<svg class="svg svg--mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+											<path d="M21 12C21 10.1195 20.411 8.28625 19.3156 6.7577C18.2203 5.22915 16.6736 4.08209 14.893 3.47763C13.1123 2.87316 11.187 2.84166 9.38744 3.38754C7.58792 3.93341 6.00459 5.02925 4.85982 6.52115C3.71505 8.01304 3.06635 9.82604 3.00482 11.7055C2.94329 13.585 3.47203 15.4366 4.51677 17.0001C5.56152 18.5637 7.06979 19.7608 8.82975 20.4232C10.5897 21.0856 12.513 21.18 14.3294 20.6933" stroke="#7F819C" stroke-width="2" stroke-linecap="round"/>
+											<circle cx="12" cy="12" r="4" stroke="#7F819C" stroke-width="2"/>
+											<path d="M16 9V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12" stroke="#7F819C" stroke-width="2" stroke-linecap="round"/>
+										</svg>
+										<span>ru@Quartz-prom.ru</span>
+									</a>
+								</li>
+								<li class="main--contact__links">
+									<ul>
+										<li>
+											<a href="#" class="telegram">
+												<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect width="48" height="48" fill="#1675FF"/>
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M21.7372 26.8922L21.4105 31.8272C21.8889 31.8272 22.1105 31.6056 22.3789 31.3372L24.7006 29.0856L29.5305 32.6556C30.4172 33.1456 31.0589 32.8889 31.2805 31.8272L34.4539 16.8822C34.7805 15.5756 33.9639 14.9806 33.1122 15.3656L14.4805 22.5522C13.2089 23.0656 13.2205 23.7772 14.2472 24.0689L19.0305 25.5856L30.0905 18.5972C30.19 18.5376 30.2877 18.4955 30.3781 18.4689L30.3811 18.4681C30.5039 18.4324 30.613 18.4254 30.6944 18.4418C30.8687 18.4769 30.9158 18.6196 30.6972 18.8189L21.7372 26.8922ZM31.599 20.6985L24.893 26.7408L29.5803 30.2053L31.599 20.6985ZM29.3014 31.5002C29.3014 31.5002 29.3028 31.4948 29.3064 31.4857C29.3034 31.4959 29.3014 31.5002 29.3014 31.5002ZM32.5302 16.3139L32.5299 16.3164L32.5302 16.3139Z" fill="white"/>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="whatsapp">
+												<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect width="48" height="48" fill="#1675FF"/>
+													<g clip-path="url(#clip0_198_419)">
+													<path d="M19.253 30.494L19.977 30.917C21.198 31.6291 22.5866 32.0029 24 32C25.5823 32 27.129 31.5308 28.4446 30.6518C29.7602 29.7727 30.7855 28.5233 31.3911 27.0615C31.9966 25.5997 32.155 23.9911 31.8463 22.4393C31.5376 20.8874 30.7757 19.462 29.6569 18.3431C28.538 17.2243 27.1126 16.4624 25.5607 16.1537C24.0089 15.845 22.4004 16.0035 20.9385 16.609C19.4767 17.2145 18.2273 18.2398 17.3483 19.5554C16.4692 20.871 16 22.4177 16 24C16 25.436 16.377 26.813 17.084 28.024L17.506 28.748L16.853 31.149L19.253 30.494ZM14.004 34L15.356 29.032C14.4652 27.5049 13.9971 25.768 14 24C14 18.477 18.477 14 24 14C29.523 14 34 18.477 34 24C34 29.523 29.523 34 24 34C22.2328 34.0029 20.4967 33.5352 18.97 32.645L14.004 34ZM20.391 19.308C20.525 19.298 20.66 19.298 20.794 19.304C20.848 19.308 20.902 19.314 20.956 19.32C21.115 19.338 21.29 19.435 21.349 19.569C21.647 20.245 21.937 20.926 22.217 21.609C22.279 21.761 22.242 21.956 22.124 22.146C22.0429 22.2745 21.9551 22.3986 21.861 22.518C21.748 22.663 21.505 22.929 21.505 22.929C21.505 22.929 21.406 23.047 21.444 23.194C21.458 23.25 21.504 23.331 21.546 23.399L21.605 23.494C21.861 23.921 22.205 24.354 22.625 24.762C22.745 24.878 22.862 24.997 22.988 25.108C23.456 25.521 23.986 25.858 24.558 26.108L24.563 26.11C24.648 26.147 24.691 26.167 24.815 26.22C24.877 26.246 24.941 26.269 25.006 26.286C25.0732 26.3031 25.1439 26.2999 25.2093 26.2767C25.2746 26.2536 25.3316 26.2116 25.373 26.156C26.097 25.279 26.163 25.222 26.169 25.222V25.224C26.2193 25.1771 26.2791 25.1415 26.3443 25.1196C26.4095 25.0977 26.4786 25.09 26.547 25.097C26.607 25.101 26.668 25.112 26.724 25.137C27.255 25.38 28.124 25.759 28.124 25.759L28.706 26.02C28.804 26.067 28.893 26.178 28.896 26.285C28.9 26.352 28.906 26.46 28.883 26.658C28.851 26.917 28.773 27.228 28.695 27.391C28.6416 27.5022 28.5707 27.6042 28.485 27.693C28.3841 27.7989 28.2736 27.8954 28.155 27.981C28.114 28.0119 28.0723 28.0419 28.03 28.071C27.9056 28.1499 27.7778 28.2233 27.647 28.291C27.3895 28.4278 27.1052 28.5063 26.814 28.521C26.629 28.531 26.444 28.545 26.258 28.535C26.25 28.535 25.69 28.448 25.69 28.448C24.2683 28.074 22.9534 27.3735 21.85 26.402C21.624 26.203 21.415 25.989 21.201 25.776C20.311 24.891 19.639 23.936 19.231 23.034C19.0222 22.5913 18.9094 22.1094 18.9 21.62C18.8959 21.0129 19.0944 20.4217 19.464 19.94C19.537 19.846 19.606 19.748 19.725 19.635C19.852 19.515 19.932 19.451 20.019 19.407C20.1347 19.349 20.2609 19.315 20.39 19.307L20.391 19.308Z" fill="white"/>
+													</g>
+													<defs>
+													<clipPath id="clip0_198_419">
+													<rect width="24" height="24" fill="white" transform="translate(12 12)"/>
+													</clipPath>
+													</defs>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="vk">
+												<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect width="48" height="48" fill="#1675FF"/>
+													<path d="M25.4336 30C18.2587 30 14.1678 25.5036 14 18.0096H17.6084C17.7238 23.5052 20.3671 25.8303 22.465 26.3106V18.0096H25.8531V22.7462C27.9196 22.5444 30.1014 20.3827 30.8357 18H34.2133C33.9379 19.2334 33.3877 20.4015 32.5972 21.4314C31.8067 22.4613 30.7928 23.3308 29.6189 23.9856C30.929 24.5828 32.0859 25.4277 33.0135 26.4644C33.941 27.5011 34.6181 28.7061 35 30H31.2762C30.479 27.723 28.486 25.9552 25.8531 25.715V30H25.4441H25.4336Z" fill="white"/>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer--bottom">
+						<span>2004 - 2024 quartz-prom.ru © Все права защищены</span>
+						<a href="#">Политика обработки персональных данных</a>
+						<a href="#">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
