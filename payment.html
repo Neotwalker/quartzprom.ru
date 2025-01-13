@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#E3E6EF">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#E3E6EF">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#E3E6EF">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<div class="page--wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="header--wrapper">
+						<div class="header--top">
+							<a href="index.html" class="logo"><img src="img/logo.svg" alt="#"></a>
+							<ul class="header--social social">
+								<li>
+									<a href="#" target="_blank">
+										<svg class="svg svg--address" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+											<path d="M12.398 19.804L12.8585 20.6917L12.8585 20.6917L12.398 19.804ZM11.602 19.804L11.1415 20.6917L11.1415 20.6917L11.602 19.804ZM18 11C18 13.1458 16.9079 14.9159 15.545 16.2906C14.183 17.6644 12.6342 18.555 11.9376 18.9163L12.8585 20.6917C13.6448 20.2838 15.397 19.2805 16.9653 17.6987C18.5326 16.1178 20 13.8706 20 11H18ZM12 5C15.3137 5 18 7.68629 18 11H20C20 6.58172 16.4183 3 12 3V5ZM6 11C6 7.68629 8.68629 5 12 5V3C7.58172 3 4 6.58172 4 11H6ZM12.0624 18.9163C11.3658 18.555 9.81702 17.6644 8.45503 16.2906C7.09211 14.9159 6 13.1458 6 11H4C4 13.8706 5.46741 16.1178 7.03474 17.6987C8.60299 19.2805 10.3552 20.2838 11.1415 20.6917L12.0624 18.9163ZM11.9376 18.9163C11.9514 18.9091 11.9733 18.9023 12 18.9023C12.0267 18.9023 12.0486 18.9091 12.0624 18.9163L11.1415 20.6917C11.6831 20.9726 12.3169 20.9726 12.8585 20.6917L11.9376 18.9163ZM14 11C14 12.1046 13.1046 13 12 13V15C14.2091 15 16 13.2091 16 11H14ZM12 9C13.1046 9 14 9.89543 14 11H16C16 8.79086 14.2091 7 12 7V9ZM10 11C10 9.89543 10.8954 9 12 9V7C9.79086 7 8 8.79086 8 11H10ZM12 13C10.8954 13 10 12.1046 10 11H8C8 13.2091 9.79086 15 12 15V13Z" fill="#7F819C"/>
+										</svg>
+										<span>
+											Россия, г. Москва,<br>
+											ул. Алабяна 10, корпус 6
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="tel:+74997030640" target="_blank">
+										<svg class="svg svg--phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+											<path d="M17.7071 13.7071L20.3552 16.3552C20.7113 16.7113 20.7113 17.2887 20.3552 17.6448C18.43 19.57 15.3821 19.7866 13.204 18.153L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L5.84701 10.796C4.21341 8.61788 4.43001 5.56999 6.35523 3.64477C6.71133 3.28867 7.28867 3.28867 7.64477 3.64477L10.2929 6.29289C10.6834 6.68342 10.6834 7.31658 10.2929 7.70711L9.27175 8.72825C9.10946 8.89054 9.06923 9.13846 9.17187 9.34373C10.3585 11.7171 12.2829 13.6415 14.6563 14.8281C14.8615 14.9308 15.1095 14.8905 15.2717 14.7283L16.2929 13.7071C16.6834 13.3166 17.3166 13.3166 17.7071 13.7071Z" stroke="#7F819C" stroke-width="2"/>
+										</svg>
+										<span>+7 (499) 703-06-40</span>
+									</a>
+								</li>
+								<li>
+									<a href="mailto:ru@Quartz-prom.ru" target="_blank">
+										<svg class="svg svg--mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+											<path d="M21 12C21 10.1195 20.411 8.28625 19.3156 6.7577C18.2203 5.22915 16.6736 4.08209 14.893 3.47763C13.1123 2.87316 11.187 2.84166 9.38744 3.38754C7.58792 3.93341 6.00459 5.02925 4.85982 6.52115C3.71505 8.01304 3.06635 9.82604 3.00482 11.7055C2.94329 13.585 3.47203 15.4366 4.51677 17.0001C5.56152 18.5637 7.06979 19.7608 8.82975 20.4232C10.5897 21.0856 12.513 21.18 14.3294 20.6933" stroke="#7F819C" stroke-width="2" stroke-linecap="round"/>
+											<circle cx="12" cy="12" r="4" stroke="#7F819C" stroke-width="2"/>
+											<path d="M16 9V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12" stroke="#7F819C" stroke-width="2" stroke-linecap="round"/>
+										</svg>
+										<span>ru@Quartz-prom.ru</span>
+									</a>
+								</li>
+							</ul>
+							<button class="button button--maingradient modal--open">
+								<span>Обратный звонок</span>
+							</button>
+						</div>
+						<div class="header--bottom">
+							<div class="header--bottom__catalog">
+								<button class="button button--catalog">
+									<div class="burger">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+									<span>каталог</span>
+								</button>
+								<nav class="header--bottom__nav catalog--nav">
+									<ul>
+										<li>
+											<a href="#">Стекла</a>
+											<ul>
+												<li><a href="catalog-type.html">Оптические клинья</a></li>
+												<li><a href="catalog-type.html">Прямоугольные призмы</a></li>
+												<li><a href="catalog-type.html">Оптические окна</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Кварцевые стержни</a>
+											<ul>
+												<li><a href="catalog-type.html">Оптические клинья</a></li>
+												<li><a href="catalog-type.html">Прямоугольные призмы</a></li>
+												<li><a href="catalog-type.html">Оптические окна</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Кварцевые трубки</a>
+											<ul>
+												<li><a href="catalog-type.html">Оптические клинья</a></li>
+												<li><a href="catalog-type.html">Прямоугольные призмы</a></li>
+												<li><a href="catalog-type.html">Оптические окна</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Оптические изделия</a>
+											<ul>
+												<li><a href="catalog-type.html">Оптические клинья</a></li>
+												<li><a href="catalog-type.html">Прямоугольные призмы</a></li>
+												<li><a href="catalog-type.html">Оптические окна</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Оптические изделия</a>
+											<ul>
+												<li><a href="catalog-type.html">Оптические клинья</a></li>
+												<li><a href="catalog-type.html">Прямоугольные призмы</a></li>
+												<li><a href="catalog-type.html">Оптические окна</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Кварцевые стержни</a>
+											<ul>
+												<li><a href="catalog-type.html">Оптические клинья</a></li>
+												<li><a href="catalog-type.html">Прямоугольные призмы</a></li>
+												<li><a href="catalog-type.html">Оптические окна</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Оптические изделия</a>
+											<ul>
+												<li><a href="catalog-type.html">Оптические клинья</a></li>
+												<li><a href="catalog-type.html">Прямоугольные призмы</a></li>
+												<li><a href="catalog-type.html">Оптические окна</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Техническая керамика</a>
+											<ul>
+												<li><a href="catalog-type.html">Оптические клинья</a></li>
+												<li><a href="catalog-type.html">Прямоугольные призмы</a></li>
+												<li><a href="catalog-type.html">Оптические окна</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<nav class="menu">
+								<ul class="list">
+									<li><a href="index.html">Главная</a></li>
+									<li class="menu-item-has-children">
+										<a href="catalog-material.html">Материалы</a>
+										<ul>
+											<li><a href="catalog-inner.html">Стекла</a></li>
+											<li><a href="catalog-inner.html">Кварцевые стержни</a></li>
+											<li><a href="catalog-inner.html">Кварцевые трубки</a></li>
+											<li><a href="catalog-inner.html">Оптические изделия</a></li>
+											<li><a href="catalog-inner.html">Техническая керамика</a></li>
+										</ul>
+									</li>
+									<li><a href="about.html">О нас</a></li>
+									<li><a href="delivery.html">Доставка</a></li>
+									<li class="current-menu-item"><a href="payment.html">Оплата</a></li>
+									<li><a href="contacts.html">Контакты</a></li>
+								</ul>
+							</nav>
+							<form role="search" method="get" id="searchform" class="search search-form" action="#">
+								<input class="search-field" type="search" name="s" value="" placeholder="Поиск...">
+								<input class="search-submit" type="submit" id="searchsubmit" value="">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main about payment">
+			<section class="main--header section" style="background-image: url(img/delivery/close-up-hand-holding-lab-pipette\ 1.png);">
+				<div class="container">
+					<div class="row">
+						<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+							<!-- Breadcrumb NavXT 7.3.1 -->
+							<span property="itemListElement" typeof="ListItem">
+								<a property="item" typeof="WebPage" title="Перейти на главную." href="index.html" class="home">
+									<span property="name">Главная</span>
+								</a>
+								<meta property="position" content="1">
+							</span>
+							/
+							<span property="itemListElement" typeof="ListItem">
+								<span property="name" class="post post-page current-item breadcrumb_last">Оплата</span>
+								<meta property="url" content="#">
+								<meta property="position" content="3">
+							</span>
+						</div>
+						<div class="main--header__text">
+							<h1 class="h1">Условия оплаты</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="payment--text section">
+				<div class="container">
+					<div class="row">
+						<div class="payment--text__wrapper">
+							<div class="payment--text__left redactor">
+								<h2>Принимаем наличный и<br> безналичный расчет </h2>
+								<h3>Оплата наличными</h3>
+								<p>
+									Оплата производится на карту Альфа банка или любым другим видом банковского перевода для физических лиц РФ.
+								</p>
+								<p>
+									Реквизиты карты или данные для отправкам перевода можно уточнить  у наших менеджеров.
+								</p>
+								<h3>Безналичная оплата</h3>
+								<p>
+									После согласования заказа, менеджеры компании высылают сформированный счёт на оплату, который вы сможете оплатить в
+									кассе отделения любого банка или с расчетного счета вашего предприятия .
+								</p>
+								<p>
+									Для юридический дич мы предоставляем весь пакет документов вместе с товаровм.
+								</p>
+							</div>
+							<div class="payment--text__right">
+								<h2 class="h2">Реквизиты компании</h2>
+								<span class="text-20">ООО "ГК "Кварц-Пром"</span>
+								<div class="payment--text__address">
+									<span class="text-20">Юридический адрес </span>
+									<span class="text-gray">Россия, г. Москва, 125080 ул. Алабяна 10, корпус 6</span>
+								</div>
+								<div class="payment--text__list">
+									<div class="payment--text__item">
+										<span class="text-20">ИНН</span>
+										<span class="text-gray">3123370286</span>
+									</div>
+									<div class="payment--text__item">
+										<span class="text-20">КПП</span>
+										<span class="text-gray">312301001</span>
+									</div>
+									<div class="payment--text__item">
+										<span class="text-20">ОГРН</span>
+										<span class="text-gray">1153123012173</span>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</section>
+			<section class="main--contact" style="background-image: url(img/form-logo.svg);">
+				<div class="container">
+					<div class="row">
+						<div class="main--contact__wrapper">
+							<div class="main--contact__left">
+								<h2 class="h2"><b>Есть вопросы?</b> Свяжитесь с нами!</h2>
+								<div class="main--contact__text text-gray">
+									Производство посуды для лабораторных исследований из кварца, кордиеритовой керамики,  технического фарфора и корунда   
+								</div>
+								<div class="main--contact__list">
+									<ul class="main--contact__social social">
+										<li>
+											<a href="mailto:ru@Quartz-prom.ru" class="mail" target="_blank">
+												<svg class="svg svg--mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+													<path d="M21 12C21 10.1195 20.411 8.28625 19.3156 6.7577C18.2203 5.22915 16.6736 4.08209 14.893 3.47763C13.1123 2.87316 11.187 2.84166 9.38744 3.38754C7.58792 3.93341 6.00459 5.02925 4.85982 6.52115C3.71505 8.01304 3.06635 9.82604 3.00482 11.7055C2.94329 13.585 3.47203 15.4366 4.51677 17.0001C5.56152 18.5637 7.06979 19.7608 8.82975 20.4232C10.5897 21.0856 12.513 21.18 14.3294 20.6933" stroke="#7F819C" stroke-width="2" stroke-linecap="round"/>
+													<circle cx="12" cy="12" r="4" stroke="#7F819C" stroke-width="2"/>
+													<path d="M16 9V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12" stroke="#7F819C" stroke-width="2" stroke-linecap="round"/>
+												</svg>
+												<div class="mail-text">
+													<b>ru@Quartz-prom.ru</b>
+													<span class="text-gray">Мы на связи!</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<div class="time">
+												<svg class="svg svg-time" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<circle cx="12" cy="12" r="9" stroke="#141851" stroke-width="2"/>
+													<path d="M16.5 12H12.25C12.1119 12 12 11.8881 12 11.75V8.5" stroke="#141851" stroke-width="2" stroke-linecap="round"/>
+												</svg>
+												<div class="time-text">
+													<b>24/7 365 дней</b>
+													<span class="text-gray">Без выходных!</span>
+												</div>
+											</div>
+										</li>
+										<li class="main--contact__links">
+											<b>Мы в социальных сетях</b>
+											<ul>
+												<li>
+													<a href="#" class="telegram" target="_blank">
+														<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<rect width="48" height="48" fill="#1675FF"/>
+															<path fill-rule="evenodd" clip-rule="evenodd" d="M21.7372 26.8922L21.4105 31.8272C21.8889 31.8272 22.1105 31.6056 22.3789 31.3372L24.7006 29.0856L29.5305 32.6556C30.4172 33.1456 31.0589 32.8889 31.2805 31.8272L34.4539 16.8822C34.7805 15.5756 33.9639 14.9806 33.1122 15.3656L14.4805 22.5522C13.2089 23.0656 13.2205 23.7772 14.2472 24.0689L19.0305 25.5856L30.0905 18.5972C30.19 18.5376 30.2877 18.4955 30.3781 18.4689L30.3811 18.4681C30.5039 18.4324 30.613 18.4254 30.6944 18.4418C30.8687 18.4769 30.9158 18.6196 30.6972 18.8189L21.7372 26.8922ZM31.599 20.6985L24.893 26.7408L29.5803 30.2053L31.599 20.6985ZM29.3014 31.5002C29.3014 31.5002 29.3028 31.4948 29.3064 31.4857C29.3034 31.4959 29.3014 31.5002 29.3014 31.5002ZM32.5302 16.3139L32.5299 16.3164L32.5302 16.3139Z" fill="white"/>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="whatsapp" target="_blank">
+														<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<rect width="48" height="48" fill="#1675FF"/>
+															<g clip-path="url(#clip0_198_419)">
+															<path d="M19.253 30.494L19.977 30.917C21.198 31.6291 22.5866 32.0029 24 32C25.5823 32 27.129 31.5308 28.4446 30.6518C29.7602 29.7727 30.7855 28.5233 31.3911 27.0615C31.9966 25.5997 32.155 23.9911 31.8463 22.4393C31.5376 20.8874 30.7757 19.462 29.6569 18.3431C28.538 17.2243 27.1126 16.4624 25.5607 16.1537C24.0089 15.845 22.4004 16.0035 20.9385 16.609C19.4767 17.2145 18.2273 18.2398 17.3483 19.5554C16.4692 20.871 16 22.4177 16 24C16 25.436 16.377 26.813 17.084 28.024L17.506 28.748L16.853 31.149L19.253 30.494ZM14.004 34L15.356 29.032C14.4652 27.5049 13.9971 25.768 14 24C14 18.477 18.477 14 24 14C29.523 14 34 18.477 34 24C34 29.523 29.523 34 24 34C22.2328 34.0029 20.4967 33.5352 18.97 32.645L14.004 34ZM20.391 19.308C20.525 19.298 20.66 19.298 20.794 19.304C20.848 19.308 20.902 19.314 20.956 19.32C21.115 19.338 21.29 19.435 21.349 19.569C21.647 20.245 21.937 20.926 22.217 21.609C22.279 21.761 22.242 21.956 22.124 22.146C22.0429 22.2745 21.9551 22.3986 21.861 22.518C21.748 22.663 21.505 22.929 21.505 22.929C21.505 22.929 21.406 23.047 21.444 23.194C21.458 23.25 21.504 23.331 21.546 23.399L21.605 23.494C21.861 23.921 22.205 24.354 22.625 24.762C22.745 24.878 22.862 24.997 22.988 25.108C23.456 25.521 23.986 25.858 24.558 26.108L24.563 26.11C24.648 26.147 24.691 26.167 24.815 26.22C24.877 26.246 24.941 26.269 25.006 26.286C25.0732 26.3031 25.1439 26.2999 25.2093 26.2767C25.2746 26.2536 25.3316 26.2116 25.373 26.156C26.097 25.279 26.163 25.222 26.169 25.222V25.224C26.2193 25.1771 26.2791 25.1415 26.3443 25.1196C26.4095 25.0977 26.4786 25.09 26.547 25.097C26.607 25.101 26.668 25.112 26.724 25.137C27.255 25.38 28.124 25.759 28.124 25.759L28.706 26.02C28.804 26.067 28.893 26.178 28.896 26.285C28.9 26.352 28.906 26.46 28.883 26.658C28.851 26.917 28.773 27.228 28.695 27.391C28.6416 27.5022 28.5707 27.6042 28.485 27.693C28.3841 27.7989 28.2736 27.8954 28.155 27.981C28.114 28.0119 28.0723 28.0419 28.03 28.071C27.9056 28.1499 27.7778 28.2233 27.647 28.291C27.3895 28.4278 27.1052 28.5063 26.814 28.521C26.629 28.531 26.444 28.545 26.258 28.535C26.25 28.535 25.69 28.448 25.69 28.448C24.2683 28.074 22.9534 27.3735 21.85 26.402C21.624 26.203 21.415 25.989 21.201 25.776C20.311 24.891 19.639 23.936 19.231 23.034C19.0222 22.5913 18.9094 22.1094 18.9 21.62C18.8959 21.0129 19.0944 20.4217 19.464 19.94C19.537 19.846 19.606 19.748 19.725 19.635C19.852 19.515 19.932 19.451 20.019 19.407C20.1347 19.349 20.2609 19.315 20.39 19.307L20.391 19.308Z" fill="white"/>
+															</g>
+															<defs>
+															<clipPath id="clip0_198_419">
+															<rect width="24" height="24" fill="white" transform="translate(12 12)"/>
+															</clipPath>
+															</defs>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="vk" target="_blank">
+														<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<rect width="48" height="48" fill="#1675FF"/>
+															<path d="M25.4336 30C18.2587 30 14.1678 25.5036 14 18.0096H17.6084C17.7238 23.5052 20.3671 25.8303 22.465 26.3106V18.0096H25.8531V22.7462C27.9196 22.5444 30.1014 20.3827 30.8357 18H34.2133C33.9379 19.2334 33.3877 20.4015 32.5972 21.4314C31.8067 22.4613 30.7928 23.3308 29.6189 23.9856C30.929 24.5828 32.0859 25.4277 33.0135 26.4644C33.941 27.5011 34.6181 28.7061 35 30H31.2762C30.479 27.723 28.486 25.9552 25.8531 25.715V30H25.4441H25.4336Z" fill="white"/>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+									<div class="main--contact__address">
+										<div class="address">
+											<svg class="svg svg--address" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+												<path d="M12.398 19.804L12.8585 20.6917L12.8585 20.6917L12.398 19.804ZM11.602 19.804L11.1415 20.6917L11.1415 20.6917L11.602 19.804ZM18 11C18 13.1458 16.9079 14.9159 15.545 16.2906C14.183 17.6644 12.6342 18.555 11.9376 18.9163L12.8585 20.6917C13.6448 20.2838 15.397 19.2805 16.9653 17.6987C18.5326 16.1178 20 13.8706 20 11H18ZM12 5C15.3137 5 18 7.68629 18 11H20C20 6.58172 16.4183 3 12 3V5ZM6 11C6 7.68629 8.68629 5 12 5V3C7.58172 3 4 6.58172 4 11H6ZM12.0624 18.9163C11.3658 18.555 9.81702 17.6644 8.45503 16.2906C7.09211 14.9159 6 13.1458 6 11H4C4 13.8706 5.46741 16.1178 7.03474 17.6987C8.60299 19.2805 10.3552 20.2838 11.1415 20.6917L12.0624 18.9163ZM11.9376 18.9163C11.9514 18.9091 11.9733 18.9023 12 18.9023C12.0267 18.9023 12.0486 18.9091 12.0624 18.9163L11.1415 20.6917C11.6831 20.9726 12.3169 20.9726 12.8585 20.6917L11.9376 18.9163ZM14 11C14 12.1046 13.1046 13 12 13V15C14.2091 15 16 13.2091 16 11H14ZM12 9C13.1046 9 14 9.89543 14 11H16C16 8.79086 14.2091 7 12 7V9ZM10 11C10 9.89543 10.8954 9 12 9V7C9.79086 7 8 8.79086 8 11H10ZM12 13C10.8954 13 10 12.1046 10 11H8C8 13.2091 9.79086 15 12 15V13Z" fill="#7F819C"/>
+											</svg>
+											<div class="address--wrapper">
+												<div class="address-1">
+													<div class="address-text">
+														<span>
+															<b>Москва,</b><br>
+															Балаклавский проспект 24к1
+														</span>
+														<span class="address-type text-gray">Главный офис</span>
+													</div>
+												</div>
+												<div class="address-2">
+													<div class="address-text">
+														<span>
+															<b>Москва,</b><br>
+															ул. Алабяна 10, корпус 6
+														</span>
+														<span class="address-type text-gray">Производство</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="phones">
+											<svg class="svg svg-phone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<path d="M17.7071 13.7071L20.3552 16.3552C20.7113 16.7113 20.7113 17.2887 20.3552 17.6448C18.43 19.57 15.3821 19.7866 13.204 18.153L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L5.84701 10.796C4.21341 8.61788 4.43001 5.56999 6.35523 3.64477C6.71133 3.28867 7.28867 3.28867 7.64477 3.64477L10.2929 6.29289C10.6834 6.68342 10.6834 7.31658 10.2929 7.70711L9.27175 8.72825C9.10946 8.89054 9.06923 9.13846 9.17187 9.34373C10.3585 11.7171 12.2829 13.6415 14.6563 14.8281C14.8615 14.9308 15.1095 14.8905 15.2717 14.7283L16.2929 13.7071C16.6834 13.3166 17.3166 13.3166 17.7071 13.7071Z" stroke="#141851" stroke-width="2"/>
+											</svg>
+											<div class="phones-wrapper">
+												<a href="tel:+74997030640" target="_blank">+7 (499) 703-06-40</a>
+												<a href="tel:+79253808104" target="_blank">+7 (925) 380-81-04</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main--contact__right">
+								<form action="/#wpcf7-f479-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+									<div style="display: none;">
+										<input type="hidden" name="_wpcf7" value="479">
+										<input type="hidden" name="_wpcf7_version" value="6.0">
+										<input type="hidden" name="_wpcf7_locale" value="en_US">
+										<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f479-o1">
+										<input type="hidden" name="_wpcf7_container_post" value="0">
+										<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+										<input type="hidden" name="_wpcf7_key" value="footer-form-en">
+										<input type="hidden" name="_cf7sg_toggles" value="">
+										<input type="hidden" name="_cf7sg_version" value="4.15.7">
+										<input type="hidden" name="_wpnonce" value="fc7cc9148a">
+										<input type="hidden" name="_wpcf7_lang" value="en">
+									</div>
+									<div class="main--form__block first">
+										<label>Ваше имя</label>
+										<span class="wpcf7-form-control-wrap" data-name="fio"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Иван" value="" type="text" name="fio"></span>
+									</div>
+									<div class="main--form__wrapper">
+										<div class="main--form__block">
+											<label>Почта</label>
+											<span class="wpcf7-form-control-wrap" data-name="email2"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="example@mail.ru" value="" type="email" name="email2"></span>
+										</div>
+										<div class="main--form__block">
+											<label>Телефон</label>
+											<span class="wpcf7-form-control-wrap" data-name="tel2"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel" aria-invalid="false" placeholder="+7 (999) 999 99 99" value="" type="tel" name="tel2"></span>
+										</div>
+									</div>
+									<div class="main--form__block">
+										<label>Ваше сообщение</label>
+										<span class="wpcf7-form-control-wrap" data-name="textarea2"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Введите сообщение" name="textarea2"></textarea></span>
+									</div>
+									<div class="main--form__footer">
+										<div class="main--form__button">
+											<button class="button button--maingradient wpcf7-form-control wpcf7-submit" type="submit">
+												<span>Связаться с нами</span>
+											</button>
+										</div>
+										<div class="main--form__block file">
+											<label for="file-1" class="input__file-button">
+												<span class="input__file-button-text">Прикрепить  файл</span>
+											</label>
+											<span class="wpcf7-form-control-wrap" data-name="file-1"><input size="40" class="wpcf7-form-control wpcf7-file" id="file-1" accept=".pdf,.txt,.png,.jpg,.docx,.doc,.ppt,.jpeg,.pptx" aria-invalid="false" type="file" name="file-1"></span>
+										</div>
+									</div>
+									</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer--top">
+						<div class="footer--info">
+							<div class="logo"><img src="img/logo-white.svg" alt="#"></div>
+							<div class="footer--info__company">
+								<div>
+									ООО «КварцПром»
+									<br><br>
+									ОГРН 1193123002951 <br>
+									ИНН 3123449024
+								</div>
+								<span>г. Москва, ул. Алабяна 10, корпус 6</span>
+							</div>
+							<div class="footer--info__developers">
+								<span>Разработка сайта</span>
+								<img src="img/develop.svg" alt="#">
+							</div>
+						</div>
+						<nav class="footer--block footer--nav">
+							<span>Навигация</span>
+							<ul>
+								<li><a href="index.html">Главная</a></li>
+								<li><a href="about.html">О компании</a></li>
+								<li><a href="catalog.html">Каталог</a></li>
+								<li><a href="delivery.html">Доставка</a></li>
+								<li><a href="payment.html">Оплата</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+								<li><a href="#">Карта сайта</a></li>
+							</ul>
+						</nav>
+						<nav class="footer--block footer--nav">
+							<span>Каталог</span>
+							<ul>
+								<li><a href="catalog-type.html">Кварцевые капилляры</a></li>
+								<li><a href="catalog-type.html">Кварцевые стержни</a></li>
+								<li><a href="catalog-type.html">Кварцевые трубки</a></li>
+								<li><a href="catalog-type.html">Кварцевая посуда</a></li>
+								<li><a href="catalog-type.html">Техническая керамика</a></li>
+								<li><a href="catalog-type.html">Линзы</a></li>
+								<li><a href="catalog-type.html">Стекла</a></li>
+								<li><a href="catalog-type.html">Оптические изделия</a></li>
+							</ul>
+						</nav>
+						<div class="footer--block footer--contacts">
+							<span>Контакты</span>
+							<ul class="social">
+								<li>
+									<a href="tel:+74997030640" target="_blank">
+										<svg class="svg svg--phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+											<path d="M17.7071 13.7071L20.3552 16.3552C20.7113 16.7113 20.7113 17.2887 20.3552 17.6448C18.43 19.57 15.3821 19.7866 13.204 18.153L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L5.84701 10.796C4.21341 8.61788 4.43001 5.56999 6.35523 3.64477C6.71133 3.28867 7.28867 3.28867 7.64477 3.64477L10.2929 6.29289C10.6834 6.68342 10.6834 7.31658 10.2929 7.70711L9.27175 8.72825C9.10946 8.89054 9.06923 9.13846 9.17187 9.34373C10.3585 11.7171 12.2829 13.6415 14.6563 14.8281C14.8615 14.9308 15.1095 14.8905 15.2717 14.7283L16.2929 13.7071C16.6834 13.3166 17.3166 13.3166 17.7071 13.7071Z" stroke="#7F819C" stroke-width="2"/>
+										</svg>
+										<span>+7 (499) 703-06-40</span>
+									</a>
+								</li>
+								<li>
+									<a href="mailto:ru@Quartz-prom.ru" target="_blank">
+										<svg class="svg svg--mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+											<path d="M21 12C21 10.1195 20.411 8.28625 19.3156 6.7577C18.2203 5.22915 16.6736 4.08209 14.893 3.47763C13.1123 2.87316 11.187 2.84166 9.38744 3.38754C7.58792 3.93341 6.00459 5.02925 4.85982 6.52115C3.71505 8.01304 3.06635 9.82604 3.00482 11.7055C2.94329 13.585 3.47203 15.4366 4.51677 17.0001C5.56152 18.5637 7.06979 19.7608 8.82975 20.4232C10.5897 21.0856 12.513 21.18 14.3294 20.6933" stroke="#7F819C" stroke-width="2" stroke-linecap="round"/>
+											<circle cx="12" cy="12" r="4" stroke="#7F819C" stroke-width="2"/>
+											<path d="M16 9V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12" stroke="#7F819C" stroke-width="2" stroke-linecap="round"/>
+										</svg>
+										<span>ru@Quartz-prom.ru</span>
+									</a>
+								</li>
+								<li class="main--contact__links">
+									<ul>
+										<li>
+											<a href="#" class="telegram" target="_blank">
+												<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect width="48" height="48" fill="#1675FF"/>
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M21.7372 26.8922L21.4105 31.8272C21.8889 31.8272 22.1105 31.6056 22.3789 31.3372L24.7006 29.0856L29.5305 32.6556C30.4172 33.1456 31.0589 32.8889 31.2805 31.8272L34.4539 16.8822C34.7805 15.5756 33.9639 14.9806 33.1122 15.3656L14.4805 22.5522C13.2089 23.0656 13.2205 23.7772 14.2472 24.0689L19.0305 25.5856L30.0905 18.5972C30.19 18.5376 30.2877 18.4955 30.3781 18.4689L30.3811 18.4681C30.5039 18.4324 30.613 18.4254 30.6944 18.4418C30.8687 18.4769 30.9158 18.6196 30.6972 18.8189L21.7372 26.8922ZM31.599 20.6985L24.893 26.7408L29.5803 30.2053L31.599 20.6985ZM29.3014 31.5002C29.3014 31.5002 29.3028 31.4948 29.3064 31.4857C29.3034 31.4959 29.3014 31.5002 29.3014 31.5002ZM32.5302 16.3139L32.5299 16.3164L32.5302 16.3139Z" fill="white"/>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="whatsapp" target="_blank">
+												<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect width="48" height="48" fill="#1675FF"/>
+													<g clip-path="url(#clip0_198_419)">
+													<path d="M19.253 30.494L19.977 30.917C21.198 31.6291 22.5866 32.0029 24 32C25.5823 32 27.129 31.5308 28.4446 30.6518C29.7602 29.7727 30.7855 28.5233 31.3911 27.0615C31.9966 25.5997 32.155 23.9911 31.8463 22.4393C31.5376 20.8874 30.7757 19.462 29.6569 18.3431C28.538 17.2243 27.1126 16.4624 25.5607 16.1537C24.0089 15.845 22.4004 16.0035 20.9385 16.609C19.4767 17.2145 18.2273 18.2398 17.3483 19.5554C16.4692 20.871 16 22.4177 16 24C16 25.436 16.377 26.813 17.084 28.024L17.506 28.748L16.853 31.149L19.253 30.494ZM14.004 34L15.356 29.032C14.4652 27.5049 13.9971 25.768 14 24C14 18.477 18.477 14 24 14C29.523 14 34 18.477 34 24C34 29.523 29.523 34 24 34C22.2328 34.0029 20.4967 33.5352 18.97 32.645L14.004 34ZM20.391 19.308C20.525 19.298 20.66 19.298 20.794 19.304C20.848 19.308 20.902 19.314 20.956 19.32C21.115 19.338 21.29 19.435 21.349 19.569C21.647 20.245 21.937 20.926 22.217 21.609C22.279 21.761 22.242 21.956 22.124 22.146C22.0429 22.2745 21.9551 22.3986 21.861 22.518C21.748 22.663 21.505 22.929 21.505 22.929C21.505 22.929 21.406 23.047 21.444 23.194C21.458 23.25 21.504 23.331 21.546 23.399L21.605 23.494C21.861 23.921 22.205 24.354 22.625 24.762C22.745 24.878 22.862 24.997 22.988 25.108C23.456 25.521 23.986 25.858 24.558 26.108L24.563 26.11C24.648 26.147 24.691 26.167 24.815 26.22C24.877 26.246 24.941 26.269 25.006 26.286C25.0732 26.3031 25.1439 26.2999 25.2093 26.2767C25.2746 26.2536 25.3316 26.2116 25.373 26.156C26.097 25.279 26.163 25.222 26.169 25.222V25.224C26.2193 25.1771 26.2791 25.1415 26.3443 25.1196C26.4095 25.0977 26.4786 25.09 26.547 25.097C26.607 25.101 26.668 25.112 26.724 25.137C27.255 25.38 28.124 25.759 28.124 25.759L28.706 26.02C28.804 26.067 28.893 26.178 28.896 26.285C28.9 26.352 28.906 26.46 28.883 26.658C28.851 26.917 28.773 27.228 28.695 27.391C28.6416 27.5022 28.5707 27.6042 28.485 27.693C28.3841 27.7989 28.2736 27.8954 28.155 27.981C28.114 28.0119 28.0723 28.0419 28.03 28.071C27.9056 28.1499 27.7778 28.2233 27.647 28.291C27.3895 28.4278 27.1052 28.5063 26.814 28.521C26.629 28.531 26.444 28.545 26.258 28.535C26.25 28.535 25.69 28.448 25.69 28.448C24.2683 28.074 22.9534 27.3735 21.85 26.402C21.624 26.203 21.415 25.989 21.201 25.776C20.311 24.891 19.639 23.936 19.231 23.034C19.0222 22.5913 18.9094 22.1094 18.9 21.62C18.8959 21.0129 19.0944 20.4217 19.464 19.94C19.537 19.846 19.606 19.748 19.725 19.635C19.852 19.515 19.932 19.451 20.019 19.407C20.1347 19.349 20.2609 19.315 20.39 19.307L20.391 19.308Z" fill="white"/>
+													</g>
+													<defs>
+													<clipPath id="clip0_198_419">
+													<rect width="24" height="24" fill="white" transform="translate(12 12)"/>
+													</clipPath>
+													</defs>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="vk" target="_blank">
+												<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect width="48" height="48" fill="#1675FF"/>
+													<path d="M25.4336 30C18.2587 30 14.1678 25.5036 14 18.0096H17.6084C17.7238 23.5052 20.3671 25.8303 22.465 26.3106V18.0096H25.8531V22.7462C27.9196 22.5444 30.1014 20.3827 30.8357 18H34.2133C33.9379 19.2334 33.3877 20.4015 32.5972 21.4314C31.8067 22.4613 30.7928 23.3308 29.6189 23.9856C30.929 24.5828 32.0859 25.4277 33.0135 26.4644C33.941 27.5011 34.6181 28.7061 35 30H31.2762C30.479 27.723 28.486 25.9552 25.8531 25.715V30H25.4441H25.4336Z" fill="white"/>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer--bottom">
+						<span>2004 - 2024 quartz-prom.ru © Все права защищены</span>
+						<a href="#">Политика обработки персональных данных</a>
+						<a href="#">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="fixed--social">
+		<div class="fixed--social__button" title="Подробнее">
+			<img class="fixed--social__open" src="img/discuss-line.svg">
+			<img class="fixed--social__close" src="img/close-fill.svg">
+		</div>
+		<div class="fixed--social__wrapper">
+			<a href="#" class="fixed--social__item" target="_blank">
+				<img src="img/socials/tg.svg" alt="#">
+				<div>Написать<br> в Телеграм</div>
+			</a>
+			<a href="#" class="fixed--social__item" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path d="M7.25301 18.494L7.97701 18.917C9.19795 19.6291 10.5866 20.0029 12 20C13.5823 20 15.129 19.5308 16.4446 18.6518C17.7602 17.7727 18.7855 16.5233 19.3911 15.0615C19.9966 13.5997 20.155 11.9911 19.8463 10.4393C19.5376 8.88743 18.7757 7.46197 17.6569 6.34315C16.538 5.22433 15.1126 4.4624 13.5607 4.15372C12.0089 3.84504 10.4004 4.00346 8.93855 4.60896C7.47674 5.21447 6.22731 6.23984 5.34826 7.55544C4.46921 8.87103 4.00001 10.4177 4.00001 12C4.00001 13.436 4.37701 14.813 5.08401 16.024L5.50601 16.748L4.85301 19.149L7.25301 18.494ZM2.00401 22L3.35601 17.032C2.46515 15.5049 1.99711 13.768 2.00001 12C2.00001 6.477 6.47701 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C10.2328 22.0029 8.49667 21.5352 6.97001 20.645L2.00401 22ZM8.39101 7.308C8.52501 7.298 8.66001 7.298 8.79401 7.304C8.84801 7.308 8.90201 7.314 8.95601 7.32C9.11501 7.338 9.29001 7.435 9.34901 7.569C9.64701 8.245 9.93701 8.926 10.217 9.609C10.279 9.761 10.242 9.956 10.124 10.146C10.0429 10.2745 9.95507 10.3986 9.86101 10.518C9.74801 10.663 9.50501 10.929 9.50501 10.929C9.50501 10.929 9.40601 11.047 9.44401 11.194C9.45801 11.25 9.50401 11.331 9.54601 11.399L9.60501 11.494C9.86101 11.921 10.205 12.354 10.625 12.762C10.745 12.878 10.862 12.997 10.988 13.108C11.456 13.521 11.986 13.858 12.558 14.108L12.563 14.11C12.648 14.147 12.691 14.167 12.815 14.22C12.877 14.246 12.941 14.269 13.006 14.286C13.0732 14.3031 13.1439 14.2999 13.2093 14.2767C13.2746 14.2536 13.3316 14.2116 13.373 14.156C14.097 13.279 14.163 13.222 14.169 13.222V13.224C14.2193 13.1771 14.2791 13.1415 14.3443 13.1196C14.4095 13.0977 14.4786 13.09 14.547 13.097C14.607 13.101 14.668 13.112 14.724 13.137C15.255 13.38 16.124 13.759 16.124 13.759L16.706 14.02C16.804 14.067 16.893 14.178 16.896 14.285C16.9 14.352 16.906 14.46 16.883 14.658C16.851 14.917 16.773 15.228 16.695 15.391C16.6416 15.5022 16.5707 15.6042 16.485 15.693C16.3841 15.7989 16.2736 15.8954 16.155 15.981C16.114 16.0119 16.0723 16.0419 16.03 16.071C15.9056 16.1499 15.7778 16.2233 15.647 16.291C15.3895 16.4278 15.1052 16.5063 14.814 16.521C14.629 16.531 14.444 16.545 14.258 16.535C14.25 16.535 13.69 16.448 13.69 16.448C12.2683 16.074 10.9534 15.3735 9.85001 14.402C9.62401 14.203 9.41501 13.989 9.20101 13.776C8.31101 12.891 7.63901 11.936 7.23101 11.034C7.02218 10.5913 6.90938 10.1094 6.90001 9.62C6.89589 9.01285 7.09436 8.42167 7.46401 7.94C7.53701 7.846 7.60601 7.748 7.72501 7.635C7.85201 7.515 7.93201 7.451 8.01901 7.407C8.13469 7.34903 8.26088 7.31502 8.39001 7.307L8.39101 7.308Z" fill="#141851"/>
+				</svg>
+				<div>Написать<br> в Whatsapp</div>
+			</a>
+			<a href="#" class="fixed--social__item" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path d="M9.366 10.682C10.3043 12.3305 11.6695 13.6957 13.318 14.634L14.202 13.396C14.3442 13.1969 14.5543 13.0569 14.7928 13.0023C15.0313 12.9478 15.2814 12.9825 15.496 13.1C16.9103 13.8729 18.4722 14.3378 20.079 14.464C20.3298 14.4839 20.5638 14.5975 20.7345 14.7823C20.9052 14.9671 21 15.2094 21 15.461V19.923C21.0001 20.1706 20.9083 20.4094 20.7424 20.5932C20.5765 20.777 20.3483 20.8927 20.102 20.918C19.572 20.973 19.038 21 18.5 21C9.94 21 3 14.06 3 5.5C3 4.962 3.027 4.428 3.082 3.898C3.10725 3.6517 3.22298 3.42352 3.40679 3.25763C3.5906 3.09175 3.82941 2.99995 4.077 3H8.539C8.79056 2.99997 9.0329 3.09475 9.21768 3.26545C9.40247 3.43615 9.51613 3.67022 9.536 3.921C9.66222 5.52779 10.1271 7.08968 10.9 8.504C11.0175 8.71856 11.0522 8.96874 10.9977 9.2072C10.9431 9.44565 10.8031 9.65584 10.604 9.798L9.366 10.682ZM6.844 10.025L8.744 8.668C8.20478 7.50409 7.83535 6.26884 7.647 5H5.01C5.004 5.166 5.001 5.333 5.001 5.5C5 12.956 11.044 19 18.5 19C18.667 19 18.834 18.997 19 18.99V16.353C17.7312 16.1646 16.4959 15.7952 15.332 15.256L13.975 17.156C13.4287 16.9437 12.898 16.6931 12.387 16.406L12.329 16.373C10.3676 15.2567 8.74328 13.6324 7.627 11.671L7.594 11.613C7.30691 11.102 7.05628 10.5713 6.844 10.025Z" fill="#141851"/>
+				</svg>
+				<div>Позвонить</div>
+			</a>
+			<a href="#" class="fixed--social__item" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path d="M3 3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3ZM20 7.238L12.072 14.338L4 7.216V19H20V7.238ZM4.511 5L12.061 11.662L19.502 5H4.511Z" fill="#141851"/>
+				</svg>
+				<div>Написать<br> на почту</div>
+			</a>
+		</div>
+	</div>
+
+	<div class="modal modal--general">
+		<div class="modal--wrapper">
+			<div class="modal--close">
+				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 13L13 1M1 1L13 13" stroke="#0F67FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+			<div class="main--contact__right">
+				<div class="h2">Оставить заявку</div>
+				<form action="/#wpcf7-f479-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+					<div style="display: none;">
+						<input type="hidden" name="_wpcf7" value="479">
+						<input type="hidden" name="_wpcf7_version" value="6.0">
+						<input type="hidden" name="_wpcf7_locale" value="en_US">
+						<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f479-o1">
+						<input type="hidden" name="_wpcf7_container_post" value="0">
+						<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+						<input type="hidden" name="_wpcf7_key" value="footer-form-en">
+						<input type="hidden" name="_cf7sg_toggles" value="">
+						<input type="hidden" name="_cf7sg_version" value="4.15.7">
+						<input type="hidden" name="_wpnonce" value="fc7cc9148a">
+						<input type="hidden" name="_wpcf7_lang" value="en">
+					</div>
+					<div class="main--form__block first">
+						<label>Ваше имя</label>
+						<span class="wpcf7-form-control-wrap" data-name="fio"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Иван" value="" type="text" name="fio"></span>
+					</div>
+					<div class="main--form__wrapper">
+						<div class="main--form__block">
+							<label>Почта</label>
+							<span class="wpcf7-form-control-wrap" data-name="email2"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="example@mail.ru" value="" type="email" name="email2"></span>
+						</div>
+						<div class="main--form__block">
+							<label>Телефон</label>
+							<span class="wpcf7-form-control-wrap" data-name="tel2"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel" aria-invalid="false" placeholder="+7 (999) 999 99 99" value="" type="tel" name="tel2"></span>
+						</div>
+					</div>
+					<div class="main--form__block">
+						<label>Ваше сообщение</label>
+						<span class="wpcf7-form-control-wrap" data-name="textarea2"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Введите сообщение" name="textarea2"></textarea></span>
+					</div>
+					<div class="main--form__footer">
+						<div class="main--form__button">
+							<button class="button button--maingradient wpcf7-form-control wpcf7-submit" type="submit">
+								<span>Связаться с нами</span>
+							</button>
+						</div>
+						<div class="main--form__block file">
+							<label for="file-1" class="input__file-button">
+								<span class="input__file-button-text">Прикрепить  файл</span>
+							</label>
+							<span class="wpcf7-form-control-wrap" data-name="file-1"><input size="40" class="wpcf7-form-control wpcf7-file" id="file-1" accept=".pdf,.txt,.png,.jpg,.docx,.doc,.ppt,.jpeg,.pptx" aria-invalid="false" type="file" name="file-1"></span>
+						</div>
+					</div>
+					<div class="la-sentinelle-container" style="max-height:0;overflow:hidden;">
+						<input value="58" type="text" name="la_sentinelle_c0a911d1ff64a874460aa778faf5c422" class="la_sentinelle_c0a911d1ff64a874460aa778faf5c422" id="la_sentinelle_c0a911d1ff64a874460aa778faf5c422-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="NzcuMjIyLjEyNy44MQ==" type="text" name="la_sentinelle_310e692159a1460c92f7e769ed6f8bad" class="la_sentinelle_310e692159a1460c92f7e769ed6f8bad" id="la_sentinelle_310e692159a1460c92f7e769ed6f8bad-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="58" type="text" name="la_sentinelle_8cda8c08679cbf74f388d33d6cf01df2" class="la_sentinelle_8cda8c08679cbf74f388d33d6cf01df2" id="la_sentinelle_8cda8c08679cbf74f388d33d6cf01df2-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="58" type="text" name="la_sentinelle_f7d9b6dd473594084300b1ea6d766175" class="la_sentinelle_f7d9b6dd473594084300b1ea6d766175" id="la_sentinelle_f7d9b6dd473594084300b1ea6d766175-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="" type="text" name="la_sentinelle_0617a21b2849f2ee0a58dc03e9de8a25" class="la_sentinelle_0617a21b2849f2ee0a58dc03e9de8a25" id="la_sentinelle_0617a21b2849f2ee0a58dc03e9de8a25-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="NzcuMjIyLjEyNy44MQ==" type="text" name="la_sentinelle_3c5101d0457056ecaed0159dbeca086b" class="la_sentinelle_3c5101d0457056ecaed0159dbeca086b" id="la_sentinelle_3c5101d0457056ecaed0159dbeca086b-3" placeholder="" style="transform: translateY(10000px);">
+						<input type="text" class="la_sentinelle_a2fdc8e526e3227f3c63b05252c96ae6" id="la_sentinelle_a2fdc8e526e3227f3c63b05252c96ae6-3" name="la_sentinelle_a2fdc8e526e3227f3c63b05252c96ae6" value="4eeef599d9" style="transform: translateY(10000px);">
+						<input value="" type="text" name="la_sentinelle_806bf15e61325fc9991b3bd3e5bf0b78" class="la_sentinelle_806bf15e61325fc9991b3bd3e5bf0b78" id="la_sentinelle_806bf15e61325fc9991b3bd3e5bf0b78-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="26929" type="text" name="la_sentinelle_bb1609af543c16b5fb79bde47b0fcdff" class="la_sentinelle_bb1609af543c16b5fb79bde47b0fcdff" id="la_sentinelle_bb1609af543c16b5fb79bde47b0fcdff-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="26929" type="text" name="la_sentinelle_3a0505b13a7198fc9965c9180705eb90" class="la_sentinelle_3a0505b13a7198fc9965c9180705eb90" id="la_sentinelle_3a0505b13a7198fc9965c9180705eb90-3" placeholder="" style="transform: translateY(10000px);">
+						<canvas id="canvas-2" width="20" height="20"></canvas></div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--question">
+		<div class="modal--wrapper">
+			<div class="modal--close">
+				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 13L13 1M1 1L13 13" stroke="#0F67FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+			<div class="main--contact__wrapper">
+				<div class="main--contact__left">
+					<h2 class="h2">
+						<b>Есть вопросы?</b><br>
+						Свяжитесь с нами!
+					</h2>
+					<div class="main--contact__text text-gray">
+						Производство посуды для лабораторных исследований из кварца, кордиеритовой керамики,  технического фарфора и корунда   
+					</div>
+					<div class="main--contact__list">
+						<ul class="main--contact__social social">
+							<li>
+								<a href="mailto:ru@Quartz-prom.ru" class="mail" target="_blank">
+									<svg class="svg svg--mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+										<path d="M21 12C21 10.1195 20.411 8.28625 19.3156 6.7577C18.2203 5.22915 16.6736 4.08209 14.893 3.47763C13.1123 2.87316 11.187 2.84166 9.38744 3.38754C7.58792 3.93341 6.00459 5.02925 4.85982 6.52115C3.71505 8.01304 3.06635 9.82604 3.00482 11.7055C2.94329 13.585 3.47203 15.4366 4.51677 17.0001C5.56152 18.5637 7.06979 19.7608 8.82975 20.4232C10.5897 21.0856 12.513 21.18 14.3294 20.6933" stroke="#7F819C" stroke-width="2" stroke-linecap="round"/>
+										<circle cx="12" cy="12" r="4" stroke="#7F819C" stroke-width="2"/>
+										<path d="M16 9V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12" stroke="#7F819C" stroke-width="2" stroke-linecap="round"/>
+									</svg>
+									<div class="mail-text">
+										<b>ru@Quartz-prom.ru</b>
+										<span class="text-gray">Мы на связи!</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="main--contact__address">
+							<div class="phones">
+								<svg class="svg svg-phone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path d="M17.7071 13.7071L20.3552 16.3552C20.7113 16.7113 20.7113 17.2887 20.3552 17.6448C18.43 19.57 15.3821 19.7866 13.204 18.153L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L5.84701 10.796C4.21341 8.61788 4.43001 5.56999 6.35523 3.64477C6.71133 3.28867 7.28867 3.28867 7.64477 3.64477L10.2929 6.29289C10.6834 6.68342 10.6834 7.31658 10.2929 7.70711L9.27175 8.72825C9.10946 8.89054 9.06923 9.13846 9.17187 9.34373C10.3585 11.7171 12.2829 13.6415 14.6563 14.8281C14.8615 14.9308 15.1095 14.8905 15.2717 14.7283L16.2929 13.7071C16.6834 13.3166 17.3166 13.3166 17.7071 13.7071Z" stroke="#141851" stroke-width="2"/>
+								</svg>
+								<div class="phones-wrapper">
+									<a href="tel:+74997030640" target="_blank">+7 (499) 703-06-40</a>
+									<a href="tel:+79253808104" target="_blank">+7 (925) 380-81-04</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main--contact__right">
+					<form action="/#wpcf7-f479-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+						<div style="display: none;">
+							<input type="hidden" name="_wpcf7" value="479">
+							<input type="hidden" name="_wpcf7_version" value="6.0">
+							<input type="hidden" name="_wpcf7_locale" value="en_US">
+							<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f479-o1">
+							<input type="hidden" name="_wpcf7_container_post" value="0">
+							<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+							<input type="hidden" name="_wpcf7_key" value="footer-form-en">
+							<input type="hidden" name="_cf7sg_toggles" value="">
+							<input type="hidden" name="_cf7sg_version" value="4.15.7">
+							<input type="hidden" name="_wpnonce" value="fc7cc9148a">
+							<input type="hidden" name="_wpcf7_lang" value="en">
+						</div>
+						<div class="main--form__block first">
+							<label>Ваше имя</label>
+							<span class="wpcf7-form-control-wrap" data-name="fio"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Иван" value="" type="text" name="fio"></span>
+						</div>
+						<div class="main--form__wrapper">
+							<div class="main--form__block">
+								<label>Почта</label>
+								<span class="wpcf7-form-control-wrap" data-name="email2"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="example@mail.ru" value="" type="email" name="email2"></span>
+							</div>
+							<div class="main--form__block">
+								<label>Телефон</label>
+								<span class="wpcf7-form-control-wrap" data-name="tel2"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel" aria-invalid="false" placeholder="+7 (999) 999 99 99" value="" type="tel" name="tel2"></span>
+							</div>
+						</div>
+						<div class="main--form__block">
+							<label>Ваше сообщение</label>
+							<span class="wpcf7-form-control-wrap" data-name="textarea2"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Введите сообщение" name="textarea2"></textarea></span>
+						</div>
+						<div class="main--form__footer">
+							<div class="main--form__button">
+								<button class="button button--maingradient wpcf7-form-control wpcf7-submit" type="submit">
+									<span>Связаться с нами</span>
+								</button>
+							</div>
+							<div class="main--form__block file">
+								<label for="file-1" class="input__file-button">
+									<span class="input__file-button-text">Прикрепить  файл</span>
+								</label>
+								<span class="wpcf7-form-control-wrap" data-name="file-1"><input size="40" class="wpcf7-form-control wpcf7-file" id="file-1" accept=".pdf,.txt,.png,.jpg,.docx,.doc,.ppt,.jpeg,.pptx" aria-invalid="false" type="file" name="file-1"></span>
+							</div>
+						</div>
+						<div class="la-sentinelle-container" style="max-height:0;overflow:hidden;">
+							<input value="58" type="text" name="la_sentinelle_c0a911d1ff64a874460aa778faf5c422" class="la_sentinelle_c0a911d1ff64a874460aa778faf5c422" id="la_sentinelle_c0a911d1ff64a874460aa778faf5c422-3" placeholder="" style="transform: translateY(10000px);">
+							<input value="NzcuMjIyLjEyNy44MQ==" type="text" name="la_sentinelle_310e692159a1460c92f7e769ed6f8bad" class="la_sentinelle_310e692159a1460c92f7e769ed6f8bad" id="la_sentinelle_310e692159a1460c92f7e769ed6f8bad-3" placeholder="" style="transform: translateY(10000px);">
+							<input value="58" type="text" name="la_sentinelle_8cda8c08679cbf74f388d33d6cf01df2" class="la_sentinelle_8cda8c08679cbf74f388d33d6cf01df2" id="la_sentinelle_8cda8c08679cbf74f388d33d6cf01df2-3" placeholder="" style="transform: translateY(10000px);">
+							<input value="58" type="text" name="la_sentinelle_f7d9b6dd473594084300b1ea6d766175" class="la_sentinelle_f7d9b6dd473594084300b1ea6d766175" id="la_sentinelle_f7d9b6dd473594084300b1ea6d766175-3" placeholder="" style="transform: translateY(10000px);">
+							<input value="" type="text" name="la_sentinelle_0617a21b2849f2ee0a58dc03e9de8a25" class="la_sentinelle_0617a21b2849f2ee0a58dc03e9de8a25" id="la_sentinelle_0617a21b2849f2ee0a58dc03e9de8a25-3" placeholder="" style="transform: translateY(10000px);">
+							<input value="NzcuMjIyLjEyNy44MQ==" type="text" name="la_sentinelle_3c5101d0457056ecaed0159dbeca086b" class="la_sentinelle_3c5101d0457056ecaed0159dbeca086b" id="la_sentinelle_3c5101d0457056ecaed0159dbeca086b-3" placeholder="" style="transform: translateY(10000px);">
+							<input type="text" class="la_sentinelle_a2fdc8e526e3227f3c63b05252c96ae6" id="la_sentinelle_a2fdc8e526e3227f3c63b05252c96ae6-3" name="la_sentinelle_a2fdc8e526e3227f3c63b05252c96ae6" value="4eeef599d9" style="transform: translateY(10000px);">
+							<input value="" type="text" name="la_sentinelle_806bf15e61325fc9991b3bd3e5bf0b78" class="la_sentinelle_806bf15e61325fc9991b3bd3e5bf0b78" id="la_sentinelle_806bf15e61325fc9991b3bd3e5bf0b78-3" placeholder="" style="transform: translateY(10000px);">
+							<input value="26929" type="text" name="la_sentinelle_bb1609af543c16b5fb79bde47b0fcdff" class="la_sentinelle_bb1609af543c16b5fb79bde47b0fcdff" id="la_sentinelle_bb1609af543c16b5fb79bde47b0fcdff-3" placeholder="" style="transform: translateY(10000px);">
+							<input value="26929" type="text" name="la_sentinelle_3a0505b13a7198fc9965c9180705eb90" class="la_sentinelle_3a0505b13a7198fc9965c9180705eb90" id="la_sentinelle_3a0505b13a7198fc9965c9180705eb90-3" placeholder="" style="transform: translateY(10000px);">
+							<canvas id="canvas-2" width="20" height="20"></canvas></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--send">
+		<div class="modal--wrapper">
+			<div class="modal--close">
+				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 13L13 1M1 1L13 13" stroke="#0F67FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+			<div class="modal--send__message h1">Ваша заявка отправлена!</div>
+			<div class="h2">Скоро с вами свяжется наш специалист.</div>
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
