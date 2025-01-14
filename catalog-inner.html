@@ -10,6 +10,7 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
 
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -70,6 +71,18 @@
 							</ul>
 							<button class="button button--maingradient modal--open">
 								<span>Обратный звонок</span>
+							</button>
+							<button class="search--button">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33317 3.33341C5.57175 3.33341 3.33317 5.57199 3.33317 8.33342C3.33317 11.0948 5.57175 13.3334 8.33317 13.3334C11.0946 13.3334 13.3332 11.0948 13.3332 8.33342C13.3332 5.57199 11.0946 3.33341 8.33317 3.33341ZM1.6665 8.33342C1.6665 4.65152 4.65127 1.66675 8.33317 1.66675C12.0151 1.66675 14.9998 4.65152 14.9998 8.33342C14.9998 12.0153 12.0151 15.0001 8.33317 15.0001C4.65127 15.0001 1.6665 12.0153 1.6665 8.33342Z" fill="#A3A7B1"></path>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9106 11.9108C12.236 11.5854 12.7637 11.5854 13.0891 11.9108L18.6784 17.5001L17.4998 18.6786L11.9106 13.0893C11.5851 12.7639 11.5851 12.2363 11.9106 11.9108Z" fill="#A3A7B1"></path>
+								</svg>
+							</button>
+							<button class="menu--burger">
+								<strong>Меню</strong>
+								<div class="menu--burger__wrapper">
+									<span></span><span></span><span></span>
+								</div>
 							</button>
 						</div>
 						<div class="header--bottom">
@@ -155,13 +168,16 @@
 								<ul class="list">
 									<li><a href="index.html">Главная</a></li>
 									<li class="menu-item-has-children">
-										<a href="catalog-material.html">Материалы</a>
+										<a href="catalog-materials.html">Материалы</a>
 										<ul>
-											<li><a href="catalog-inner.html">Стекла</a></li>
-											<li><a href="catalog-inner.html">Кварцевые стержни</a></li>
-											<li><a href="catalog-inner.html">Кварцевые трубки</a></li>
-											<li><a href="catalog-inner.html">Оптические изделия</a></li>
-											<li><a href="catalog-inner.html">Техническая керамика</a></li>
+											<li><a href="catalog-material.html">BaF2</a></li>
+											<li><a href="catalog-material.html">CaF2</a></li>
+											<li><a href="catalog-material.html">MgF2</a></li>
+											<li><a href="catalog-material.html">ZnSe</a></li>
+											<li><a href="catalog-material.html">ZnS</a></li>
+											<li><a href="catalog-material.html">Ge</a></li>
+											<li><a href="catalog-material.html">К8, ЛК5, ТФ10</a></li>
+											<li><a href="catalog-material.html">Кварцевое стекло КУ-1, КУ-2, КВ, КИ</a></li>
 										</ul>
 									</li>
 									<li><a href="about.html">О нас</a></li>
@@ -381,7 +397,7 @@
 					</div>
 				</div>
 			</div>
-			<section class="main--contact" style="background-image: url(img/form-logo.svg);">
+			<section class="main--contact section" style="background-image: url(img/form-logo.svg);">
 				<div class="container">
 					<div class="row">
 						<div class="main--contact__wrapper">
@@ -417,6 +433,37 @@
 												</div>
 											</div>
 										</li>
+									</ul>
+									<div class="main--contact__address">
+										<div class="address">
+											<svg class="svg svg--address" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+												<path d="M12.398 19.804L12.8585 20.6917L12.8585 20.6917L12.398 19.804ZM11.602 19.804L11.1415 20.6917L11.1415 20.6917L11.602 19.804ZM18 11C18 13.1458 16.9079 14.9159 15.545 16.2906C14.183 17.6644 12.6342 18.555 11.9376 18.9163L12.8585 20.6917C13.6448 20.2838 15.397 19.2805 16.9653 17.6987C18.5326 16.1178 20 13.8706 20 11H18ZM12 5C15.3137 5 18 7.68629 18 11H20C20 6.58172 16.4183 3 12 3V5ZM6 11C6 7.68629 8.68629 5 12 5V3C7.58172 3 4 6.58172 4 11H6ZM12.0624 18.9163C11.3658 18.555 9.81702 17.6644 8.45503 16.2906C7.09211 14.9159 6 13.1458 6 11H4C4 13.8706 5.46741 16.1178 7.03474 17.6987C8.60299 19.2805 10.3552 20.2838 11.1415 20.6917L12.0624 18.9163ZM11.9376 18.9163C11.9514 18.9091 11.9733 18.9023 12 18.9023C12.0267 18.9023 12.0486 18.9091 12.0624 18.9163L11.1415 20.6917C11.6831 20.9726 12.3169 20.9726 12.8585 20.6917L11.9376 18.9163ZM14 11C14 12.1046 13.1046 13 12 13V15C14.2091 15 16 13.2091 16 11H14ZM12 9C13.1046 9 14 9.89543 14 11H16C16 8.79086 14.2091 7 12 7V9ZM10 11C10 9.89543 10.8954 9 12 9V7C9.79086 7 8 8.79086 8 11H10ZM12 13C10.8954 13 10 12.1046 10 11H8C8 13.2091 9.79086 15 12 15V13Z" fill="#7F819C"/>
+											</svg>
+											<div class="address--wrapper">
+												<div class="address-1">
+													<div class="address-text">
+														<span>
+															<b>Москва,</b><br>
+															Балаклавский проспект 24к1
+														</span>
+														<span class="address-type text-gray">Главный офис</span>
+													</div>
+												</div>
+												<div class="address-2">
+													<div class="address-text">
+														<span>
+															<b>Москва,</b><br>
+															ул. Алабяна 10, корпус 6
+														</span>
+														<span class="address-type text-gray">Производство</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="main--contact__list">
+									<ul class="main--contact__social social">
 										<li class="main--contact__links">
 											<b>Мы в социальных сетях</b>
 											<ul>
@@ -454,40 +501,13 @@
 											</ul>
 										</li>
 									</ul>
-									<div class="main--contact__address">
-										<div class="address">
-											<svg class="svg svg--address" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-												<path d="M12.398 19.804L12.8585 20.6917L12.8585 20.6917L12.398 19.804ZM11.602 19.804L11.1415 20.6917L11.1415 20.6917L11.602 19.804ZM18 11C18 13.1458 16.9079 14.9159 15.545 16.2906C14.183 17.6644 12.6342 18.555 11.9376 18.9163L12.8585 20.6917C13.6448 20.2838 15.397 19.2805 16.9653 17.6987C18.5326 16.1178 20 13.8706 20 11H18ZM12 5C15.3137 5 18 7.68629 18 11H20C20 6.58172 16.4183 3 12 3V5ZM6 11C6 7.68629 8.68629 5 12 5V3C7.58172 3 4 6.58172 4 11H6ZM12.0624 18.9163C11.3658 18.555 9.81702 17.6644 8.45503 16.2906C7.09211 14.9159 6 13.1458 6 11H4C4 13.8706 5.46741 16.1178 7.03474 17.6987C8.60299 19.2805 10.3552 20.2838 11.1415 20.6917L12.0624 18.9163ZM11.9376 18.9163C11.9514 18.9091 11.9733 18.9023 12 18.9023C12.0267 18.9023 12.0486 18.9091 12.0624 18.9163L11.1415 20.6917C11.6831 20.9726 12.3169 20.9726 12.8585 20.6917L11.9376 18.9163ZM14 11C14 12.1046 13.1046 13 12 13V15C14.2091 15 16 13.2091 16 11H14ZM12 9C13.1046 9 14 9.89543 14 11H16C16 8.79086 14.2091 7 12 7V9ZM10 11C10 9.89543 10.8954 9 12 9V7C9.79086 7 8 8.79086 8 11H10ZM12 13C10.8954 13 10 12.1046 10 11H8C8 13.2091 9.79086 15 12 15V13Z" fill="#7F819C"/>
-											</svg>
-											<div class="address--wrapper">
-												<div class="address-1">
-													<div class="address-text">
-														<span>
-															<b>Москва,</b><br>
-															Балаклавский проспект 24к1
-														</span>
-														<span class="address-type text-gray">Главный офис</span>
-													</div>
-												</div>
-												<div class="address-2">
-													<div class="address-text">
-														<span>
-															<b>Москва,</b><br>
-															ул. Алабяна 10, корпус 6
-														</span>
-														<span class="address-type text-gray">Производство</span>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="phones">
-											<svg class="svg svg-phone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-												<path d="M17.7071 13.7071L20.3552 16.3552C20.7113 16.7113 20.7113 17.2887 20.3552 17.6448C18.43 19.57 15.3821 19.7866 13.204 18.153L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L5.84701 10.796C4.21341 8.61788 4.43001 5.56999 6.35523 3.64477C6.71133 3.28867 7.28867 3.28867 7.64477 3.64477L10.2929 6.29289C10.6834 6.68342 10.6834 7.31658 10.2929 7.70711L9.27175 8.72825C9.10946 8.89054 9.06923 9.13846 9.17187 9.34373C10.3585 11.7171 12.2829 13.6415 14.6563 14.8281C14.8615 14.9308 15.1095 14.8905 15.2717 14.7283L16.2929 13.7071C16.6834 13.3166 17.3166 13.3166 17.7071 13.7071Z" stroke="#141851" stroke-width="2"/>
-											</svg>
-											<div class="phones-wrapper">
-												<a href="tel:+74997030640" target="_blank">+7 (499) 703-06-40</a>
-												<a href="tel:+79253808104" target="_blank">+7 (925) 380-81-04</a>
-											</div>
+									<div class="phones">
+										<svg class="svg svg-phone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+											<path d="M17.7071 13.7071L20.3552 16.3552C20.7113 16.7113 20.7113 17.2887 20.3552 17.6448C18.43 19.57 15.3821 19.7866 13.204 18.153L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L5.84701 10.796C4.21341 8.61788 4.43001 5.56999 6.35523 3.64477C6.71133 3.28867 7.28867 3.28867 7.64477 3.64477L10.2929 6.29289C10.6834 6.68342 10.6834 7.31658 10.2929 7.70711L9.27175 8.72825C9.10946 8.89054 9.06923 9.13846 9.17187 9.34373C10.3585 11.7171 12.2829 13.6415 14.6563 14.8281C14.8615 14.9308 15.1095 14.8905 15.2717 14.7283L16.2929 13.7071C16.6834 13.3166 17.3166 13.3166 17.7071 13.7071Z" stroke="#141851" stroke-width="2"/>
+										</svg>
+										<div class="phones-wrapper">
+											<a href="tel:+74997030640" target="_blank">+7 (499) 703-06-40</a>
+											<a href="tel:+79253808104" target="_blank">+7 (925) 380-81-04</a>
 										</div>
 									</div>
 								</div>
@@ -533,9 +553,9 @@
 										</div>
 										<div class="main--form__block file">
 											<label for="file-1" class="input__file-button">
-												<span class="input__file-button-text">Прикрепить  файл</span>
+												<span class="input__file-button-text">Прикрепить файл</span>
 											</label>
-											<span class="wpcf7-form-control-wrap" data-name="file-1"><input size="40" class="wpcf7-form-control wpcf7-file" id="file-1" accept=".pdf,.txt,.png,.jpg,.docx,.doc,.ppt,.jpeg,.pptx" aria-invalid="false" type="file" name="file-1"></span>
+											<span class="wpcf7-form-control-wrap" data-name="file-1"><input size="40" class="wpcf7-form-control wpcf7-file" id="file-1" accept=".pdf,.txt,.png,.jpg,.docx,.doc,.ppt,.jpeg,.pptx" aria-invalid="false" type="file" name="file-1" multiple></span>
 										</div>
 									</div>
 									</form>
@@ -560,10 +580,6 @@
 									ИНН 3123449024
 								</div>
 								<span>г. Москва, ул. Алабяна 10, корпус 6</span>
-							</div>
-							<div class="footer--info__developers">
-								<span>Разработка сайта</span>
-								<img src="img/develop.svg" alt="#">
 							</div>
 						</div>
 						<nav class="footer--block footer--nav">
@@ -650,6 +666,10 @@
 							</ul>
 						</div>
 					</div>
+					<div class="footer--info__developers">
+						<span>Разработка сайта</span>
+						<img src="img/develop.svg" alt="#">
+					</div>
 					<div class="footer--bottom">
 						<span>2004 - 2024 quartz-prom.ru © Все права защищены</span>
 						<a href="#">Политика обработки персональных данных</a>
@@ -690,6 +710,153 @@
 			</a>
 		</div>
 	</div>
+
+	<div class="menu--mobile">
+		<div class="menu--mobile__wrapper">
+			<div class="menu--mobile__top">
+				<a href="index.html" class="logo"><img src="img/logo.svg" alt="#"></a>
+				<button class="search--button">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33317 3.33341C5.57175 3.33341 3.33317 5.57199 3.33317 8.33342C3.33317 11.0948 5.57175 13.3334 8.33317 13.3334C11.0946 13.3334 13.3332 11.0948 13.3332 8.33342C13.3332 5.57199 11.0946 3.33341 8.33317 3.33341ZM1.6665 8.33342C1.6665 4.65152 4.65127 1.66675 8.33317 1.66675C12.0151 1.66675 14.9998 4.65152 14.9998 8.33342C14.9998 12.0153 12.0151 15.0001 8.33317 15.0001C4.65127 15.0001 1.6665 12.0153 1.6665 8.33342Z" fill="#A3A7B1"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9106 11.9108C12.236 11.5854 12.7637 11.5854 13.0891 11.9108L18.6784 17.5001L17.4998 18.6786L11.9106 13.0893C11.5851 12.7639 11.5851 12.2363 11.9106 11.9108Z" fill="#A3A7B1"/>
+					</svg>
+				</button>
+				<button class="menu--burger">
+					<strong>Меню</strong>
+					<div class="menu--burger__wrapper">
+						<span></span><span></span><span></span>
+					</div>
+				</button>
+			</div>
+			<div class="menu--mobile__bottom">
+				<div class="menu--mobile__bottom--left">
+					<ul class="menu menu--mobile__inner">
+						<li><a href="index.html">Главная</a></li>
+						<li class="menu-item-has-children">
+							<a href="#">Каталог</a>
+							<ul class="sub-menu">
+								<li><a href="catalog-inner.html">Оптические изделия</a></li>
+								<li><a href="catalog-inner.html">Стёкла</a></li>
+								<li><a href="catalog-inner.html">Линзы</a></li>
+								<li><a href="catalog-inner.html">Трубки</a></li>
+								<li><a href="catalog-inner.html">Кварцевые стержни</a></li>
+								<li><a href="catalog-inner.html">Кварцевые каппиляры</a></li>
+							</ul>
+						</li>
+						<li class="menu-item-has-children">
+							<a href="#">Материалы</a>
+							<ul class="sub-menu">
+								<li><a href="catalog-material.html">Al203 (Лейкосапфир)</a></li>
+								<li><a href="catalog-material.html">BaF (Барий Фтористы)</a></li>
+								<li><a href="catalog-material.html">CaF2 (Германий)</a></li>
+								<li><a href="catalog-material.html">XCI (Хлорид калия)</a></li>
+								<li><a href="catalog-material.html">LiF Литий Фтористый, Фторид Лития</a></li>
+								<li><a href="catalog-material.html">MgF2 Магний Фтористый</a></li>
+							</ul>
+						</li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="delivery.html">Доставка</a></li>
+						<li><a href="payment.html">Оплата</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+					<li class="main--contact__links">
+						<b>Мы в социальных сетях</b>
+						<ul>
+							<li>
+								<a href="#" class="telegram" target="_blank">
+									<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="48" height="48" fill="#1675FF"></rect>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M21.7372 26.8922L21.4105 31.8272C21.8889 31.8272 22.1105 31.6056 22.3789 31.3372L24.7006 29.0856L29.5305 32.6556C30.4172 33.1456 31.0589 32.8889 31.2805 31.8272L34.4539 16.8822C34.7805 15.5756 33.9639 14.9806 33.1122 15.3656L14.4805 22.5522C13.2089 23.0656 13.2205 23.7772 14.2472 24.0689L19.0305 25.5856L30.0905 18.5972C30.19 18.5376 30.2877 18.4955 30.3781 18.4689L30.3811 18.4681C30.5039 18.4324 30.613 18.4254 30.6944 18.4418C30.8687 18.4769 30.9158 18.6196 30.6972 18.8189L21.7372 26.8922ZM31.599 20.6985L24.893 26.7408L29.5803 30.2053L31.599 20.6985ZM29.3014 31.5002C29.3014 31.5002 29.3028 31.4948 29.3064 31.4857C29.3034 31.4959 29.3014 31.5002 29.3014 31.5002ZM32.5302 16.3139L32.5299 16.3164L32.5302 16.3139Z" fill="white"></path>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="whatsapp" target="_blank">
+									<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="48" height="48" fill="#1675FF"></rect>
+										<g clip-path="url(#clip0_198_419)">
+										<path d="M19.253 30.494L19.977 30.917C21.198 31.6291 22.5866 32.0029 24 32C25.5823 32 27.129 31.5308 28.4446 30.6518C29.7602 29.7727 30.7855 28.5233 31.3911 27.0615C31.9966 25.5997 32.155 23.9911 31.8463 22.4393C31.5376 20.8874 30.7757 19.462 29.6569 18.3431C28.538 17.2243 27.1126 16.4624 25.5607 16.1537C24.0089 15.845 22.4004 16.0035 20.9385 16.609C19.4767 17.2145 18.2273 18.2398 17.3483 19.5554C16.4692 20.871 16 22.4177 16 24C16 25.436 16.377 26.813 17.084 28.024L17.506 28.748L16.853 31.149L19.253 30.494ZM14.004 34L15.356 29.032C14.4652 27.5049 13.9971 25.768 14 24C14 18.477 18.477 14 24 14C29.523 14 34 18.477 34 24C34 29.523 29.523 34 24 34C22.2328 34.0029 20.4967 33.5352 18.97 32.645L14.004 34ZM20.391 19.308C20.525 19.298 20.66 19.298 20.794 19.304C20.848 19.308 20.902 19.314 20.956 19.32C21.115 19.338 21.29 19.435 21.349 19.569C21.647 20.245 21.937 20.926 22.217 21.609C22.279 21.761 22.242 21.956 22.124 22.146C22.0429 22.2745 21.9551 22.3986 21.861 22.518C21.748 22.663 21.505 22.929 21.505 22.929C21.505 22.929 21.406 23.047 21.444 23.194C21.458 23.25 21.504 23.331 21.546 23.399L21.605 23.494C21.861 23.921 22.205 24.354 22.625 24.762C22.745 24.878 22.862 24.997 22.988 25.108C23.456 25.521 23.986 25.858 24.558 26.108L24.563 26.11C24.648 26.147 24.691 26.167 24.815 26.22C24.877 26.246 24.941 26.269 25.006 26.286C25.0732 26.3031 25.1439 26.2999 25.2093 26.2767C25.2746 26.2536 25.3316 26.2116 25.373 26.156C26.097 25.279 26.163 25.222 26.169 25.222V25.224C26.2193 25.1771 26.2791 25.1415 26.3443 25.1196C26.4095 25.0977 26.4786 25.09 26.547 25.097C26.607 25.101 26.668 25.112 26.724 25.137C27.255 25.38 28.124 25.759 28.124 25.759L28.706 26.02C28.804 26.067 28.893 26.178 28.896 26.285C28.9 26.352 28.906 26.46 28.883 26.658C28.851 26.917 28.773 27.228 28.695 27.391C28.6416 27.5022 28.5707 27.6042 28.485 27.693C28.3841 27.7989 28.2736 27.8954 28.155 27.981C28.114 28.0119 28.0723 28.0419 28.03 28.071C27.9056 28.1499 27.7778 28.2233 27.647 28.291C27.3895 28.4278 27.1052 28.5063 26.814 28.521C26.629 28.531 26.444 28.545 26.258 28.535C26.25 28.535 25.69 28.448 25.69 28.448C24.2683 28.074 22.9534 27.3735 21.85 26.402C21.624 26.203 21.415 25.989 21.201 25.776C20.311 24.891 19.639 23.936 19.231 23.034C19.0222 22.5913 18.9094 22.1094 18.9 21.62C18.8959 21.0129 19.0944 20.4217 19.464 19.94C19.537 19.846 19.606 19.748 19.725 19.635C19.852 19.515 19.932 19.451 20.019 19.407C20.1347 19.349 20.2609 19.315 20.39 19.307L20.391 19.308Z" fill="white"></path>
+										</g>
+										<defs>
+										<clipPath id="clip0_198_419">
+										<rect width="24" height="24" fill="white" transform="translate(12 12)"></rect>
+										</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="vk" target="_blank">
+									<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="48" height="48" fill="#1675FF"></rect>
+										<path d="M25.4336 30C18.2587 30 14.1678 25.5036 14 18.0096H17.6084C17.7238 23.5052 20.3671 25.8303 22.465 26.3106V18.0096H25.8531V22.7462C27.9196 22.5444 30.1014 20.3827 30.8357 18H34.2133C33.9379 19.2334 33.3877 20.4015 32.5972 21.4314C31.8067 22.4613 30.7928 23.3308 29.6189 23.9856C30.929 24.5828 32.0859 25.4277 33.0135 26.4644C33.941 27.5011 34.6181 28.7061 35 30H31.2762C30.479 27.723 28.486 25.9552 25.8531 25.715V30H25.4441H25.4336Z" fill="white"></path>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</div>
+				<div class="menu--mobile__bottom--right">
+					<button class="button button--maingradient modal--open">
+						<span>Обратный звонок</span>
+					</button>
+					<div class="main--contact__list">
+						<ul class="main--contact__social social">
+							<li>
+								<a href="mailto:ru@Quartz-prom.ru" class="mail" target="_blank">
+									<svg class="svg svg--mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+										<path d="M21 12C21 10.1195 20.411 8.28625 19.3156 6.7577C18.2203 5.22915 16.6736 4.08209 14.893 3.47763C13.1123 2.87316 11.187 2.84166 9.38744 3.38754C7.58792 3.93341 6.00459 5.02925 4.85982 6.52115C3.71505 8.01304 3.06635 9.82604 3.00482 11.7055C2.94329 13.585 3.47203 15.4366 4.51677 17.0001C5.56152 18.5637 7.06979 19.7608 8.82975 20.4232C10.5897 21.0856 12.513 21.18 14.3294 20.6933" stroke="#7F819C" stroke-width="2" stroke-linecap="round"></path>
+										<circle cx="12" cy="12" r="4" stroke="#7F819C" stroke-width="2"></circle>
+										<path d="M16 9V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12" stroke="#7F819C" stroke-width="2" stroke-linecap="round"></path>
+									</svg>
+									<div class="mail-text">
+										<b>ru@Quartz-prom.ru</b>
+										<span class="text-gray">Мы на связи!</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<svg class="svg svg--address" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+										<path d="M12.398 19.804L12.8585 20.6917L12.8585 20.6917L12.398 19.804ZM11.602 19.804L11.1415 20.6917L11.1415 20.6917L11.602 19.804ZM18 11C18 13.1458 16.9079 14.9159 15.545 16.2906C14.183 17.6644 12.6342 18.555 11.9376 18.9163L12.8585 20.6917C13.6448 20.2838 15.397 19.2805 16.9653 17.6987C18.5326 16.1178 20 13.8706 20 11H18ZM12 5C15.3137 5 18 7.68629 18 11H20C20 6.58172 16.4183 3 12 3V5ZM6 11C6 7.68629 8.68629 5 12 5V3C7.58172 3 4 6.58172 4 11H6ZM12.0624 18.9163C11.3658 18.555 9.81702 17.6644 8.45503 16.2906C7.09211 14.9159 6 13.1458 6 11H4C4 13.8706 5.46741 16.1178 7.03474 17.6987C8.60299 19.2805 10.3552 20.2838 11.1415 20.6917L12.0624 18.9163ZM11.9376 18.9163C11.9514 18.9091 11.9733 18.9023 12 18.9023C12.0267 18.9023 12.0486 18.9091 12.0624 18.9163L11.1415 20.6917C11.6831 20.9726 12.3169 20.9726 12.8585 20.6917L11.9376 18.9163ZM14 11C14 12.1046 13.1046 13 12 13V15C14.2091 15 16 13.2091 16 11H14ZM12 9C13.1046 9 14 9.89543 14 11H16C16 8.79086 14.2091 7 12 7V9ZM10 11C10 9.89543 10.8954 9 12 9V7C9.79086 7 8 8.79086 8 11H10ZM12 13C10.8954 13 10 12.1046 10 11H8C8 13.2091 9.79086 15 12 15V13Z" fill="#7F819C"></path>
+									</svg>
+									<span>
+										<b>Москва,</b><br>
+										ул. Алабяна 10, корпус 6
+									</span>
+								</a>
+							</li>
+							<li>
+								<div class="time">
+									<svg class="svg svg-time" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<circle cx="12" cy="12" r="9" stroke="#141851" stroke-width="2"></circle>
+										<path d="M16.5 12H12.25C12.1119 12 12 11.8881 12 11.75V8.5" stroke="#141851" stroke-width="2" stroke-linecap="round"></path>
+									</svg>
+									<div class="time-text">
+										<b>24/7 365 дней</b>
+										<span class="text-gray">Без выходных!</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="tel:+74997030640" target="_blank">
+									<svg class="svg svg--phone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path d="M17.7071 13.7071L20.3552 16.3552C20.7113 16.7113 20.7113 17.2887 20.3552 17.6448C18.43 19.57 15.3821 19.7866 13.204 18.153L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L5.84701 10.796C4.21341 8.61788 4.43001 5.56999 6.35523 3.64477C6.71133 3.28867 7.28867 3.28867 7.64477 3.64477L10.2929 6.29289C10.6834 6.68342 10.6834 7.31658 10.2929 7.70711L9.27175 8.72825C9.10946 8.89054 9.06923 9.13846 9.17187 9.34373C10.3585 11.7171 12.2829 13.6415 14.6563 14.8281C14.8615 14.9308 15.1095 14.8905 15.2717 14.7283L16.2929 13.7071C16.6834 13.3166 17.3166 13.3166 17.7071 13.7071Z" stroke="#141851" stroke-width="2"></path>
+									</svg>
+									<b>+7 (499) 703-06-40</b>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<form role="search" method="get" id="searchform" class="search search--fixed" action="#">
+		<input class="search-field" type="search" name="s" value="" placeholder="Поиск...">
+		<input class="search-submit" type="submit" id="searchsubmit" value="">
+	</form>
 
 	<div class="modal modal--general">
 		<div class="modal--wrapper">
@@ -739,10 +906,10 @@
 							</button>
 						</div>
 						<div class="main--form__block file">
-							<label for="file-1" class="input__file-button">
-								<span class="input__file-button-text">Прикрепить  файл</span>
+							<label for="file-2" class="input__file-button">
+								<span class="input__file-button-text">Прикрепить файл</span>
 							</label>
-							<span class="wpcf7-form-control-wrap" data-name="file-1"><input size="40" class="wpcf7-form-control wpcf7-file" id="file-1" accept=".pdf,.txt,.png,.jpg,.docx,.doc,.ppt,.jpeg,.pptx" aria-invalid="false" type="file" name="file-1"></span>
+							<span class="wpcf7-form-control-wrap" data-name="file-2"><input size="40" class="wpcf7-form-control wpcf7-file" id="file-2" accept=".pdf,.txt,.png,.jpg,.docx,.doc,.ppt,.jpeg,.pptx" aria-invalid="false" type="file" name="file-2" multiple></span>
 						</div>
 					</div>
 					<div class="la-sentinelle-container" style="max-height:0;overflow:hidden;">
@@ -847,10 +1014,12 @@
 								</button>
 							</div>
 							<div class="main--form__block file">
-								<label for="file-1" class="input__file-button">
-									<span class="input__file-button-text">Прикрепить  файл</span>
+								<label for="file-3" class="input__file-button">
+									<span class="input__file-button-text">Прикрепить файл</span>
 								</label>
-								<span class="wpcf7-form-control-wrap" data-name="file-1"><input size="40" class="wpcf7-form-control wpcf7-file" id="file-1" accept=".pdf,.txt,.png,.jpg,.docx,.doc,.ppt,.jpeg,.pptx" aria-invalid="false" type="file" name="file-1"></span>
+								<span class="wpcf7-form-control-wrap" data-name="file-3">
+									<input size="40" class="wpcf7-form-control wpcf7-file" id="file-3" accept=".pdf,.txt,.png,.jpg,.docx,.doc,.ppt,.jpeg,.pptx" aria-invalid="false" type="file" name="file-3" multiple>
+								</span>
 							</div>
 						</div>
 						<div class="la-sentinelle-container" style="max-height:0;overflow:hidden;">

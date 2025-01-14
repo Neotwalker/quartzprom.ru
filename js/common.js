@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const socials = document.querySelector('.fixed--social__button');
 	if (socials) {
 		socials.addEventListener('click', (e) => {
+			e.preventDefault();
 			const open = socials.querySelector('.fixed--social__open');
 			const close = socials.querySelector('.fixed--social__close');
 			const wrapper = document.querySelector('.fixed--social__wrapper');
@@ -13,148 +14,105 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	}
 
-	let openMenu = document.querySelectorAll('.menu--burger');
-	const menuMobile = document.querySelector('.menu--mobile');
-	openMenu.forEach((open) => {
-		open.addEventListener('click', () => {
-			menuMobile.classList.add('active');
-			document.querySelector('html').classList.add('hidden');
-		});
-	});
-
-	let closeMenu = document.querySelector('.menu--mobile__top .menu--burger');
-	closeMenu.addEventListener('click', () => {
-		menuMobile.classList.remove('active');
-		document.querySelector('html').classList.remove('hidden');
-	});
-
-	let searchButton = document.querySelectorAll('.search--button');
-	
-	searchButton.forEach(button => {
-		button.addEventListener('click', (event) => {
-			const searchForm = button.nextElementSibling;
-			if (searchForm.classList.contains('search')) {
-				searchForm.classList.add('active');
-			}
-		});
-		menuMobile.addEventListener('click', (event) => {
-			const searchForm = button.nextElementSibling;
-			if (!event.target.closest('.search.active') && !event.target.closest('.search--button')) {
-				searchForm.classList.remove('active');
-				event.stopPropagation();
-			}
-		});
-	});
-
-	const productsLink = document.querySelectorAll('.menu--mobile__inner li a[href="#"], .products--header__catalog--menu__item li a[href="#"]');
-	productsLink.forEach(link => {
-			if (link){
-					const subMenu = link.nextElementSibling;
-					if (subMenu) {
-							link.addEventListener('click', (e) => {
-									e.preventDefault();
-									const subMenuItems = subMenu.querySelectorAll('.sub-menu');
-									let totalHeight = 0;
-									subMenuItems.forEach(item => {
-											totalHeight += item.scrollHeight;
-									});
-									if (subMenu.classList.contains('active')) {
-											link.classList.remove('active');
-											subMenu.classList.remove('active');
-									} else {
-											subMenu.classList.add('active');
-											link.classList.add('active');
-									}
-							});
-					}
-			}
-	});
-
-	// Проверяем наличие элементов на странице
-	const charItems = document.querySelectorAll(".catalog--type__char--item");
-	const showCharButton = document.querySelector(".show--char");
-	if (charItems.length > 0 && showCharButton) {
-		// Изначально показываем только первые 8 элементов
-		const visibleCount = 8;
-		charItems.forEach((item, index) => {
-			if (index >= visibleCount) {
-				item.classList.add("hidden");
-			}
-		});
-		// Обработчик на кнопку
-		showCharButton.addEventListener("click", () => {
-			const isHidden = charItems[visibleCount]?.classList.contains("hidden");
-			if (isHidden) {
-				// Показать все элементы
-				charItems.forEach(item => item.classList.remove("hidden"));
-				showCharButton.textContent = "Скрыть";
-			} else {
-				// Скрыть элементы после первых 8
-				charItems.forEach((item, index) => {
-					if (index >= visibleCount) {
-						item.classList.add("hidden");
-					}
-				});
-				showCharButton.textContent = "Все характеристики";
-			}
-		});
-	}
-
-	const modalOpenButtons = document.querySelectorAll('.modal--open');
-	const modalOpenQuestion = document.querySelectorAll('.modal--openQuestion');
+	const searchForm = document.querySelector('.search--fixed');
 	const modals = document.querySelectorAll('.modal');
 	const modalSend = document.querySelector('.modal--send');
+	const modalGeneral = document.querySelector('.modal--general');
+	const modalQuestion = document.querySelector('.modal--question');
+	const buttonCatalog = document.querySelector('.button--catalog');
+	const headerCatalog = document.querySelector('.header--bottom__nav');
 
 	function getScrollbarWidth() {
 		return window.innerWidth - document.documentElement.clientWidth;
 	}
 
-	// Функция для открытия модального окна
 	function openModal(modal) {
 		const scrollbarWidth = getScrollbarWidth();
 		modal.classList.add('active');
-		// document.body.classList.add('hidden');
 		document.body.style.paddingRight = `${scrollbarWidth}px`;
 		document.documentElement.classList.add('hidden');
 	}
 
-	// Функция для закрытия модального окна
 	function closeModals() {
 		modals.forEach(modal => modal.classList.remove('active'));
 		document.body.style.paddingRight = '';
 		modalSend.classList.remove('active');
-		// document.body.classList.remove('hidden');
 		document.documentElement.classList.remove('hidden');
 	}
 
-	// Открытие модального окна при нажатии на кнопки
-	modalOpenButtons.forEach(button => {
+	let openMenu = document.querySelectorAll('.menu--burger');
+	const menuMobile = document.querySelector('.menu--mobile');
+	openMenu.forEach((open) => {
+		open.addEventListener('click', () => {
+			menuMobile.classList.add('active');
+			document.documentElement.classList.add('hidden');
+		});
+	});
+
+	document.querySelector('.menu--mobile__top .menu--burger').addEventListener('click', () => {
+		menuMobile.classList.remove('active');
+		document.documentElement.classList.remove('hidden');
+	});
+
+	function handleSearchFormClick(event) {
+		if (!event.target.closest('.search--fixed.active') && !event.target.closest('.search--button')) {
+			searchForm.classList.remove('active');
+			document.documentElement.classList.remove('hidden');
+			document.removeEventListener('click', handleSearchFormClick);
+		}
+	}
+
+	function openSearchForm() {
+		searchForm.classList.add('active');
+		document.documentElement.classList.add('hidden');
+		document.addEventListener('click', handleSearchFormClick);
+	}
+
+	document.querySelectorAll('.search--button').forEach(button => {
+		button.addEventListener('click', openSearchForm);
+	});
+
+	searchForm.addEventListener('click', (event) => {
+		event.stopPropagation();
+	});
+
+
+	document.querySelectorAll('.menu--mobile__inner li a[href="#"], .products--header__catalog--menu__item li a[href="#"]').forEach(link => {
+		const subMenu = link.nextElementSibling;
+		if (subMenu) {
+			link.addEventListener('click', (e) => {
+				e.preventDefault();
+				const subMenuItems = subMenu.querySelectorAll('.sub-menu');
+				let totalHeight = 0;
+				subMenuItems.forEach(item => {
+					totalHeight += item.scrollHeight;
+				});
+				subMenu.classList.toggle('active');
+				link.classList.toggle('active');
+			});
+		}
+	});
+
+	document.querySelectorAll('.modal--open').forEach(button => {
 		button.addEventListener('click', (e) => {
 			e.preventDefault();
-			const modalGeneral = document.querySelector('.modal--general');
 			openModal(modalGeneral);
 		});
 	});
 
-	modalOpenQuestion.forEach(button => {
+	document.querySelectorAll('.modal--openQuestion').forEach(button => {
 		button.addEventListener('click', (e) => {
 			e.preventDefault();
-			const modalQuestion = document.querySelector('.modal--question');
 			openModal(modalQuestion);
 		});
 	});
 
-	// Закрытие модального окна при нажатии на кнопки закрытия
 	document.querySelectorAll('.modal--close').forEach(closeButton => {
-		closeButton.addEventListener('click', () => {
-			closeModals();
-		});
+		closeButton.addEventListener('click', closeModals);
 	});
 
-	let buttonCatalog = document.querySelector('.button--catalog');
-	let headerCatalog = document.querySelector('.header--bottom__nav');
 	buttonCatalog.addEventListener('click', () => {
-		let burger = buttonCatalog.querySelector('.burger');
+		const burger = buttonCatalog.querySelector('.burger');
 		buttonCatalog.classList.toggle('active');
 		burger.classList.toggle('active');
 		headerCatalog.classList.toggle('active');
@@ -167,6 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		let labelVal = label.innerText;
 
 		input.addEventListener('change', function (e) {
+			e.preventDefault();
 			let countFiles = '';
 			if (this.files && this.files.length >= 1) {
 				countFiles = this.files.length;
@@ -241,13 +200,10 @@ document.addEventListener("DOMContentLoaded", () => {
 			// Удаляем все латинские буквы
 			this.value = this.value.replace(/[a-zA-Z]/g, '');
 		});
-	});
-
-	document.querySelectorAll('input[type="text"], textarea, input[type="number"]').forEach(field => {
-    // Запрещаем вставку в поля ввода
-    field.addEventListener('paste', function(event) {
-        event.preventDefault();  // Отменяем вставку
-    });
+		// Запрещаем вставку в поля ввода
+		field.addEventListener('paste', function(event) {
+			event.preventDefault();  // Отменяем вставку
+		});
 	});
 
 	let eventCalllback = function(e) {
@@ -311,15 +267,15 @@ document.addEventListener("DOMContentLoaded", () => {
 	 * @param {HTMLElement} li - Текущий li, у которого вложенный ul изменился
 	 */
 	function updateParentHeight(li) {
-			const parentUl = li.closest("ul"); // Родительский ul
-			if (parentUl && parentUl.classList.contains("visible")) {
-					// Пересчитываем высоту с учётом всех видимых вложенных ul
-					parentUl.style.maxHeight = `${calculateTotalHeight(parentUl)}px`;
-					const grandParentLi = parentUl.closest("li");
-					if (grandParentLi) {
-							updateParentHeight(grandParentLi); // Рекурсивно обновляем высоты выше
-					}
+		const parentUl = li.closest("ul"); // Родительский ul
+		if (parentUl && parentUl.classList.contains("visible")) {
+			// Пересчитываем высоту с учётом всех видимых вложенных ul
+			parentUl.style.maxHeight = `${calculateTotalHeight(parentUl)}px`;
+			const grandParentLi = parentUl.closest("li");
+			if (grandParentLi) {
+				updateParentHeight(grandParentLi); // Рекурсивно обновляем высоты выше
 			}
+		}
 	}
 
 	/**
@@ -328,23 +284,22 @@ document.addEventListener("DOMContentLoaded", () => {
 	 * @returns {number} - Общая высота контента
 	 */
 	function calculateTotalHeight(ul) {
-    let totalHeight = 0;
+		let totalHeight = 0;
+		// Считаем высоту всех видимых li и их вложенных ul
+		const children = ul.querySelectorAll(":scope > li");
+		children.forEach(child => {
+			totalHeight += child.scrollHeight;
 
-    // Считаем высоту всех видимых li и их вложенных ul
-    const children = ul.querySelectorAll(":scope > li");
-    children.forEach(child => {
-        totalHeight += child.scrollHeight;
+			const nestedUl = child.querySelector(":scope > ul.visible");
+			if (nestedUl) {
+				// Учитываем высоту вложенных ul и их margin-top
+				const style = window.getComputedStyle(nestedUl);
+				const marginTop = parseInt(style.marginTop, 10) || 0;
+				totalHeight += nestedUl.scrollHeight + marginTop;
+			}
+		});
 
-        const nestedUl = child.querySelector(":scope > ul.visible");
-        if (nestedUl) {
-            // Учитываем высоту вложенных ul и их margin-top
-            const style = window.getComputedStyle(nestedUl);
-            const marginTop = parseInt(style.marginTop, 10) || 0;
-            totalHeight += nestedUl.scrollHeight + marginTop;
-        }
-    });
-
-    return totalHeight;
+		return totalHeight;
 	}
 
 	document.querySelectorAll('.la-sentinelle-container input[type="text"]').forEach((field) => {
@@ -404,8 +359,72 @@ document.addEventListener("DOMContentLoaded", () => {
 	document.addEventListener('click', (event) => {
 		const target = event.target;
 		if (!target.closest('.modal--wrapper') && !target.closest('.modal--open') && !target.closest('.modal--openQuestion') && !target.closest('.wpcf7-file') && !target.closest('.input__file-button')) {
-			closeModals();
+			modals.forEach(modal => {
+				if (modal.classList.contains('active')) { // Проверка на активное состояние формы поиска
+					closeModals();
+				}
+
+			});
 		}
 	});
+
+	// Проверяем наличие элементов на странице
+	const charItems = document.querySelectorAll(".catalog--type__char--item");
+	const showCharButton = document.querySelector(".show--char");
+	if (charItems.length > 0 && showCharButton) {
+		// Изначально показываем только первые 8 элементов
+		const visibleCount = 8;
+		charItems.forEach((item, index) => {
+			if (index >= visibleCount) {
+				item.classList.add("hidden");
+			}
+		});
+		// Обработчик на кнопку
+		showCharButton.addEventListener("click", () => {
+			const isHidden = charItems[visibleCount]?.classList.contains("hidden");
+			if (isHidden) {
+				// Показать все элементы
+				charItems.forEach(item => item.classList.remove("hidden"));
+				showCharButton.textContent = "Скрыть";
+			} else {
+				// Скрыть элементы после первых 8
+				charItems.forEach((item, index) => {
+					if (index >= visibleCount) {
+						item.classList.add("hidden");
+					}
+				});
+				showCharButton.textContent = "Все характеристики";
+			}
+		});
+	}
+
+	// Функция для обработки кликов на span для раскрытия/скрытия ul с динамическим расчетом max-height
+	function handleFooterNav() {
+		document.querySelectorAll('.footer--nav span').forEach(span => {
+			span.addEventListener('click', () => {
+				const ul = span.nextElementSibling;
+				if (ul && ul.tagName === 'UL') {
+					if (ul.classList.contains('active')) {
+						ul.style.maxHeight = '0';
+					} else {
+						ul.style.maxHeight = ul.scrollHeight + 'px';
+					}
+					ul.classList.toggle('active');
+					span.classList.toggle('active');
+				}
+			});
+		});
+	}
+	// Проверка ширины экрана и запуск функции при разрешении меньше или равно 992px
+	function checkScreenWidth() {
+		if (window.matchMedia("(max-width: 992px)").matches) {
+			handleFooterNav();
+		}
+	}
+	// Запуск проверки при загрузке страницы
+	checkScreenWidth();
+	// Запуск проверки при изменении размера окна
+	window.addEventListener('resize', checkScreenWidth);
+
 
 });
